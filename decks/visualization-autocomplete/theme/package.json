@@ -1,0 +1,51 @@
+{
+  "name": "slidev-theme-hyeon",
+  "private": true,
+  "version": "1.0.0",
+  "slidev": {
+    "defaults": {
+      "colorSchema": "light",
+      "aspectRatio": "16/9",
+      "canvasWidth": 980,
+      "lineNumbers": false,
+      "selectable": true,
+      "transition": "none",
+      "fonts": {
+        "sans": "Arial, Noto Sans KR Variable",
+        "mono": "Menlo, Consolas, monospace",
+        "provider": "none"
+      },
+      "themeConfig": {
+        "h2-size": "30px",
+        "h3-size": "18px",
+        "h3-weight": 400,
+        "quote-size": "27px",
+        "slide-padding-x": "50px",
+        "slide-padding-top": "20px",
+        "slide-padding-bottom": "44px",
+        "list-indent": "0.5em",
+        "list-marker-gap": "0.15em",
+        "cover-header-size": "18px",
+        "cover-header-gap": "3px",
+        "cover-header-letter-spacing": "-0.012em",
+        "cover-title-size": "50px",
+        "cover-subtitle-size": "24px",
+        "cover-title-gap": "-10px",
+        "cover-author-size": "14px",
+        "cover-author-gap": "18px",
+        "authorProfiles": {
+          "layout": "row",
+          "columns": 3,
+          "imageSize": "120px",
+          "cardWidth": "135px",
+          "gap": "20px",
+          "marginTop": "20px",
+          "outerAlign": "left",
+          "innerAlign": "center",
+          "nameSize": "16px",
+          "affiliationSize": "11px"
+        }
+      }
+    }
+  }
+}

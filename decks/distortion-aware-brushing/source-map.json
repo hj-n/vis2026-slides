@@ -1,0 +1,127 @@
+[
+  {
+    "slide": 2,
+    "sourceSlide": 17,
+    "component": "UnreliableAnalysisProblem",
+    "clicks": 1
+  },
+  {
+    "slide": 3,
+    "sourceSlide": 20,
+    "component": "DimensionalityReductionUsagePatterns",
+    "clicks": 0
+  },
+  {
+    "slide": 4,
+    "sourceSlide": 21,
+    "component": "WhyOverreliance",
+    "clicks": 0
+  },
+  {
+    "slide": 5,
+    "sourceSlide": 22,
+    "component": "WhyCherryPicking",
+    "clicks": 0
+  },
+  {
+    "slide": 6,
+    "sourceSlide": 23,
+    "component": "InevitableInformationLoss",
+    "clicks": 0
+  },
+  {
+    "slide": 7,
+    "sourceSlide": 24,
+    "component": "IntelligentBrushingMitigatesLoss",
+    "clicks": 0
+  },
+  {
+    "slide": 8,
+    "sourceSlide": 25,
+    "component": "SemanticBrushingQuestion",
+    "clicks": 0
+  },
+  {
+    "slide": 9,
+    "sourceSlide": 26,
+    "component": "IntelligentBrushingSolution",
+    "clicks": 0
+  },
+  {
+    "slide": 10,
+    "sourceSlide": 27,
+    "component": "BrushingInspectProjection",
+    "clicks": 0
+  },
+  {
+    "slide": 11,
+    "sourceSlide": 28,
+    "component": "BrushingFindStart",
+    "clicks": 0
+  },
+  {
+    "slide": 12,
+    "sourceSlide": 29,
+    "component": "BrushingConstructLens",
+    "clicks": 0
+  },
+  {
+    "slide": 13,
+    "sourceSlide": 30,
+    "component": "BrushingRelocatePoints",
+    "clicks": 0
+  },
+  {
+    "slide": 14,
+    "sourceSlide": 31,
+    "component": "BrushingStartSelection",
+    "clicks": 0
+  },
+  {
+    "slide": 15,
+    "sourceSlide": 32,
+    "component": "BrushingUpdateLens",
+    "clicks": 0
+  },
+  {
+    "slide": 16,
+    "sourceSlide": 33,
+    "component": "BrushingContinueSelection",
+    "clicks": 0
+  },
+  {
+    "slide": 17,
+    "sourceSlide": 34,
+    "component": "BrushingConfirmCluster",
+    "clicks": 0
+  },
+  {
+    "slide": 18,
+    "sourceSlide": 35,
+    "component": "CaliforniaDabDemo",
+    "clicks": 0
+  },
+  {
+    "slide": 19,
+    "sourceSlide": 36,
+    "component": "MnistUserStudy",
+    "clicks": 0
+  },
+  {
+    "slide": 20,
+    "sourceSlide": 37,
+    "component": "DistortionBrushingResults",
+    "clicks": 1
+  },
+  {
+    "slide": 21,
+    "component": "DabProject",
+    "url": "https://distortion-aware-brushing.github.io/site/",
+    "clicks": 0
+  },
+  {
+    "slide": 22,
+    "component": "VisClosing",
+    "clicks": 0
+  }
+]

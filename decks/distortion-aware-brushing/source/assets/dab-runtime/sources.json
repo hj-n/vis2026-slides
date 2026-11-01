@@ -1,0 +1,28 @@
+{
+  "schema": {
+    "url": "https://github.com/distortion-aware-brushing/schema",
+    "commit": "b83bdbd304f066fb03a288ac50d7b9f3c6f868c1",
+    "license": "MIT"
+  },
+  "engine": {
+    "url": "https://github.com/distortion-aware-brushing/engine",
+    "commit": "388243dcd239a477deca9016f6b8cba8f362db27",
+    "license": "MIT"
+  },
+  "preprocess-js": {
+    "url": "https://github.com/distortion-aware-brushing/preprocess-js",
+    "commit": "9f39fcf4059a96833db3870a8dce0b21d998efef",
+    "license": "MIT"
+  },
+  "demo": {
+    "url": "https://github.com/distortion-aware-brushing/demo",
+    "commit": "b84dcf9b24fd5c82ef3abf44a5e912f2ce5f15b7",
+    "license": "see upstream"
+  },
+  "adaptation": "Local ES-module imports; original web bundle exposes its existing convexHull, extendHull, findRelocationPositionsHull and convexHullBorderRenderer. The slide subclasses the pinned core engine to use these exact original hull geometry and capped relocation functions while retaining map coordinates and linked views. Initial hover remains circular as in the original implementation.",
+  "web": {
+    "url": "https://github.com/distortion-aware-brushing/web",
+    "commit": "81e81720973b1f99d8a40a3c465447b681f843f2",
+    "license": "MIT"
+  }
+}

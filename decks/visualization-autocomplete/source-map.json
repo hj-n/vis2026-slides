@@ -1,0 +1,91 @@
+[
+  {
+    "slide": 2,
+    "sourceSlide": 39,
+    "component": "ChartAuthoringTools",
+    "clicks": 1
+  },
+  {
+    "slide": 3,
+    "sourceSlide": 40,
+    "component": "OfficeWorkersChartAuthoring",
+    "clicks": 1
+  },
+  {
+    "slide": 4,
+    "sourceSlide": 41,
+    "component": "OfficeWorkersLessons",
+    "clicks": 0
+  },
+  {
+    "slide": 5,
+    "sourceSlide": 42,
+    "component": "AuthoringAgencyApproachability",
+    "clicks": 4
+  },
+  {
+    "slide": 6,
+    "sourceSlide": 43,
+    "component": "AuthoringAgencyGoal",
+    "clicks": 0
+  },
+  {
+    "slide": 7,
+    "sourceSlide": 45,
+    "component": "IntentTranslationAuthoring",
+    "clicks": 1
+  },
+  {
+    "slide": 8,
+    "sourceSlide": 46,
+    "component": "VisualizationAutocompletionModel",
+    "clicks": 1
+  },
+  {
+    "slide": 9,
+    "sourceSlide": 47,
+    "component": "AutocompletionSequence",
+    "clicks": 0
+  },
+  {
+    "slide": 10,
+    "sourceSlide": 48,
+    "component": "FastGenerationMotivation",
+    "clicks": 0
+  },
+  {
+    "slide": 11,
+    "sourceSlide": 49,
+    "component": "AutocompleteRecommendationMechanism",
+    "clicks": 5
+  },
+  {
+    "slide": 12,
+    "sourceSlide": 50,
+    "component": "DistilledCodeGeneration",
+    "clicks": 1
+  },
+  {
+    "slide": 13,
+    "sourceSlide": 51,
+    "component": "AutocompleteUserStudy",
+    "clicks": 0
+  },
+  {
+    "slide": 14,
+    "sourceSlide": 52,
+    "component": "AutocompleteQualityResults",
+    "clicks": 2
+  },
+  {
+    "slide": 15,
+    "component": "AutocompleteDemo",
+    "url": "https://vis.autocomplete.studio/",
+    "clicks": 0
+  },
+  {
+    "slide": 16,
+    "component": "VisClosing",
+    "clicks": 0
+  }
+]
