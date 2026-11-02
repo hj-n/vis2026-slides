@@ -1,0 +1,11 @@
+{
+  "categories": [
+    { "name": "t-SNE", "correct": 33, "partial": 18, "full": 19 },
+    { "name": "UMAP", "correct": 6, "partial": 12, "full": 8 },
+    { "name": "PCA", "correct": 11, "partial": 4, "full": 9 },
+    { "name": "MDS", "correct": 12, "partial": 3, "full": 6 }
+  ],
+  "source": "https://www.hyeonjeon.com/assets/pdf/jeon26vis.pdf",
+  "figure": "5",
+  "provenance": "Counts recovered from the original PDF vector rectangle heights and count-axis tick positions on page 6. The normalized panel uses the same counts."
+}

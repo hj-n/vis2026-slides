@@ -50,13 +50,12 @@ import DeckFrame from '../../visualization-autocomplete/theme/components/DeckFra
   flex-wrap: wrap;
   align-content: start;
   justify-content: center;
-  min-height: 34px;
+  min-height: 0;
   line-height: 1.2;
 }
 .brushing-cover :deep(.author-affiliation) { margin-top: 4px; line-height: 1.3; }
-.brushing-cover :deep(.author-profile:nth-child(6) .author-meta) { width: 124px; }
+.brushing-cover :deep(.author-profile:nth-child(6) .author-meta) { width: 136px; }
 .brushing-cover :deep(.author-profile:nth-child(6) .author-name) {
-  font-size: 13px;
   white-space: nowrap;
   overflow-wrap: normal;
 }

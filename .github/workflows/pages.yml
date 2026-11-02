@@ -29,7 +29,7 @@ jobs:
       - uses: actions/configure-pages@v5
         id: pages
       - run: npm ci --no-audit --no-fund
-      - name: Build both presentations
+      - name: Build all presentations
         run: npm run build
         env:
           VIS_SLIDES_BASE: ${{ steps.pages.outputs.base_path }}

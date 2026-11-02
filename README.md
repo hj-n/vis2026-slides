@@ -7,12 +7,13 @@ npm install
 npm run dev
 ```
 
-`npm run dev` starts both decks on one server:
+`npm run dev` starts all decks on one server:
 
 - Visualization Autocomplete: http://localhost:3045/visauto/
 - Distortion-aware Brushing: http://localhost:3045/dab/
+- Stop Misusing t-SNE and UMAP: http://localhost:3045/misuse/
 
-Presenter mode: append `#/presenter/` to either URL. Changes to the slide sources update the browser automatically.
+Presenter mode: append `#/presenter/` to any deck URL. Changes to the slide sources update the browser automatically.
 
 16 slides in this order:
 
@@ -37,7 +38,7 @@ npm run build
 npm run export:autocomplete
 ```
 
-The static builds are written to `dist/visauto/` and `dist/dab/`. Serve the `dist/` directory to use the same URLs in production. PDF export requires Playwright Chromium.
+The static builds are written to `dist/visauto/`, `dist/dab/`, and `dist/misuse/`. Serve the `dist/` directory to use the same URLs in production. PDF export requires Playwright Chromium.
 
 ## 2. Distortion-aware Brushing
 
@@ -53,7 +54,14 @@ Editable slide contents: `decks/distortion-aware-brushing/source/snu-slides.tsx`
 
 Paper: https://www.hyeonjeon.com/assets/pdf/jeon25tvcg3.pdf
 
-Decks 3–4 can be added as separate directories under `decks/` when their sources are selected.
+## 3. Stop Misusing t-SNE and UMAP
+
+Open http://localhost:3045/misuse/. The deck contains 19 slides covering misuse, its causes, four solution directions, and a shared closing slide with the first two talks crossed out.
+
+Edit `decks/stop-misusing/slides.md`; slide 2 content is in `decks/stop-misusing/components/MisuseDefinition.vue`.
+Build it with `npm run build:misuse`.
+
+Deck 4 can be added under `decks/` when its source is selected.
 
 The closing slide is shared at `shared/components/VisClosing.vue`; each deck specifies how many completed talks to cross out.
 
@@ -63,6 +71,7 @@ The `main` branch deploys automatically through `.github/workflows/pages.yml`.
 
 - `/vis2026-slides/visauto/`: Visualization Autocomplete
 - `/vis2026-slides/dab/`: Distortion-aware Brushing
+- `/vis2026-slides/misuse/`: Stop Misusing t-SNE and UMAP
 
 For a local production build with the Pages prefix:
 
@@ -70,4 +79,4 @@ For a local production build with the Pages prefix:
 VIS_SLIDES_BASE=/vis2026-slides npm run build
 ```
 
-`npm run dev` continues to use `/visauto/` and `/dab/` without the repository prefix.
+`npm run dev` continues to use `/visauto/`, `/dab/`, and `/misuse/` without the repository prefix.
