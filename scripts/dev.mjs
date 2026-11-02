@@ -9,6 +9,7 @@ const decks = [
   { base: '/visauto/', entry: 'decks/visualization-autocomplete/slides.md', port: 3055 },
   { base: '/dab/', entry: 'decks/distortion-aware-brushing/slides.md', port: 3056 },
   { base: '/misuse/', entry: 'decks/stop-misusing/slides.md', port: 3057 },
+  { base: '/umato/', entry: 'decks/umato/slides.md', port: 3058 },
 ];
 const children = decks.map(deck => spawn(process.execPath, [cli, deck.entry, '--port', String(deck.port), '--base', deck.base], {
   stdio: 'inherit', env: { ...process.env, VIS_PRESENTATIONS_PROXY_PORT: String(port) },
@@ -61,4 +62,4 @@ for (const child of children) {
   child.on('exit', code => { if (!stopping) stop(code || 1); });
 }
 server.on('error', error => { console.error(error.message); stop(1); });
-server.listen(port, () => console.log(`\nVisualization Autocomplete: http://localhost:${port}/visauto/\nDistortion-aware Brushing: http://localhost:${port}/dab/\nStop Misusing t-SNE and UMAP: http://localhost:${port}/misuse/\n`));
+server.listen(port, () => console.log(`\nVisualization Autocomplete: http://localhost:${port}/visauto/\nDistortion-aware Brushing: http://localhost:${port}/dab/\nStop Misusing t-SNE and UMAP: http://localhost:${port}/misuse/\nUMATO: http://localhost:${port}/umato/\n`));

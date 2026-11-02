@@ -12,6 +12,7 @@ npm run dev
 - Visualization Autocomplete: http://localhost:3045/visauto/
 - Distortion-aware Brushing: http://localhost:3045/dab/
 - Stop Misusing t-SNE and UMAP: http://localhost:3045/misuse/
+- UMATO: http://localhost:3045/umato/
 
 Presenter mode: append `#/presenter/` to any deck URL. Changes to the slide sources update the browser automatically.
 
@@ -38,7 +39,7 @@ npm run build
 npm run export:autocomplete
 ```
 
-The static builds are written to `dist/visauto/`, `dist/dab/`, and `dist/misuse/`. Serve the `dist/` directory to use the same URLs in production. PDF export requires Playwright Chromium.
+The static builds are written to `dist/visauto/`, `dist/dab/`, `dist/misuse/`, and `dist/umato/`. Serve the `dist/` directory to use the same URLs in production. PDF export requires Playwright Chromium.
 
 ## 2. Distortion-aware Brushing
 
@@ -61,7 +62,11 @@ Open http://localhost:3045/misuse/. The deck contains 19 slides covering misuse,
 Edit `decks/stop-misusing/slides.md`; slide 2 content is in `decks/stop-misusing/components/MisuseDefinition.vue`.
 Build it with `npm run build:misuse`.
 
-Deck 4 can be added under `decks/` when its source is selected.
+## 4. UMATO
+
+Open http://localhost:3045/umato/. The deck contains 10 slides: title and authors, the VIS 2022 presentation, the expanded-work motivation, the 2022-to-2026 transition, algorithm motivation and pipeline, accuracy and runtime evidence, hyperparameter guidelines, and the GitHub link with QR code.
+
+Edit `decks/umato/slides.md`; cover styles are in `decks/umato/layouts/umato-cover.vue`. Build with `npm run build:umato`.
 
 The closing slide is shared at `shared/components/VisClosing.vue`; each deck specifies how many completed talks to cross out.
 
@@ -72,6 +77,7 @@ The `main` branch deploys automatically through `.github/workflows/pages.yml`.
 - `/vis2026-slides/visauto/`: Visualization Autocomplete
 - `/vis2026-slides/dab/`: Distortion-aware Brushing
 - `/vis2026-slides/misuse/`: Stop Misusing t-SNE and UMAP
+- `/vis2026-slides/umato/`: UMATO
 
 For a local production build with the Pages prefix:
 
@@ -79,4 +85,4 @@ For a local production build with the Pages prefix:
 VIS_SLIDES_BASE=/vis2026-slides npm run build
 ```
 
-`npm run dev` continues to use `/visauto/`, `/dab/`, and `/misuse/` without the repository prefix.
+`npm run dev` continues to use `/visauto/`, `/dab/`, `/misuse/`, and `/umato/` without the repository prefix.

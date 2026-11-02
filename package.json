@@ -12,7 +12,8 @@
     "export:brushing": "slidev export decks/distortion-aware-brushing/slides.md",
     "build:visauto": "node scripts/build.mjs visauto",
     "build:dab": "node scripts/build.mjs dab",
-    "build:misuse": "node scripts/build.mjs misuse"
+    "build:misuse": "node scripts/build.mjs misuse",
+    "build:umato": "node scripts/build.mjs umato"
   },
   "dependencies": {
     "@fontsource-variable/noto-sans-kr": "5.3.0",

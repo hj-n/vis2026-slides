@@ -1,0 +1,122 @@
+{
+  "provenance": {
+    "early": "2022 Table 1: KL divergence sigma=0.1; two of four datasets shown.",
+    "expanded": "TVCG Figure 2(b): 20 datasets, mean ranks and published 95% CIs, approximately digitized from vector paths. MDS shows no visible interval."
+  },
+  "early": [
+    {
+      "dataset": "Spheres",
+      "scores": [
+        {
+          "name": "t-SNE",
+          "value": 0.5399
+        },
+        {
+          "name": "UMAP",
+          "value": 0.5383
+        },
+        {
+          "name": "UMATO",
+          "value": 0.1434
+        }
+      ]
+    },
+    {
+      "dataset": "Fashion-MNIST",
+      "scores": [
+        {
+          "name": "t-SNE",
+          "value": 0.0663
+        },
+        {
+          "name": "UMAP",
+          "value": 0.0641
+        },
+        {
+          "name": "UMATO",
+          "value": 0.0342
+        }
+      ]
+    }
+  ],
+  "expanded": [
+    {
+      "name": "MDS",
+      "mean": 0.987,
+      "low": 0.987,
+      "high": 0.987
+    },
+    {
+      "name": "UMATO",
+      "mean": 2.591,
+      "low": 1.818,
+      "high": 3.377
+    },
+    {
+      "name": "UMATO (random)",
+      "mean": 3.994,
+      "low": 3.126,
+      "high": 4.874
+    },
+    {
+      "name": "PCA",
+      "mean": 4.591,
+      "low": 2.673,
+      "high": 6.522
+    },
+    {
+      "name": "LAMP",
+      "mean": 4.786,
+      "low": 3.352,
+      "high": 6.233
+    },
+    {
+      "name": "Isomap",
+      "mean": 5.591,
+      "low": 4.597,
+      "high": 6.597
+    },
+    {
+      "name": "PacMAP",
+      "mean": 7.792,
+      "low": 5.704,
+      "high": 9.893
+    },
+    {
+      "name": "t-SNE",
+      "mean": 9.189,
+      "low": 6.258,
+      "high": 12.132
+    },
+    {
+      "name": "Trimap",
+      "mean": 9.792,
+      "low": 8.358,
+      "high": 11.239
+    },
+    {
+      "name": "LLE",
+      "mean": 10.189,
+      "low": 8.509,
+      "high": 11.881
+    },
+    {
+      "name": "L-MDS",
+      "mean": 10.384,
+      "low": 8.572,
+      "high": 12.208
+    },
+    {
+      "name": "UMAP (PCA)",
+      "mean": 11.39,
+      "low": 10.61,
+      "high": 12.182
+    },
+    {
+      "name": "UMAP",
+      "mean": 12.189,
+      "low": 10.623,
+      "high": 13.767
+    }
+  ]
+}

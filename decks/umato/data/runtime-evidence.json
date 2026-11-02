@@ -1,0 +1,85 @@
+{
+  "provenance": {
+    "early": "2022 Appendix G, Table 4: MNIST, means over 10 runs. Reported plus/minus retained in data but not plotted because the interval type is unspecified.",
+    "expanded": "TVCG Fig. 4: 20 datasets, 5 runs per technique/dataset, mean time and 95% CI approximately digitized from PDF vectors. Different benchmark from 2022."
+  },
+  "early": [
+    {
+      "name": "t-SNE",
+      "mean": 374.85,
+      "spread": 11.38
+    },
+    {
+      "name": "UMATO",
+      "mean": 73.32,
+      "spread": 8.39
+    },
+    {
+      "name": "UMAP",
+      "mean": 26.1,
+      "spread": 3.97
+    }
+  ],
+  "expanded": [
+    {
+      "name": "PCA",
+      "mean": 0.034,
+      "low": 0.021,
+      "high": 0.034
+    },
+    {
+      "name": "UMATO",
+      "mean": 1.745,
+      "low": 1.6,
+      "high": 1.889
+    },
+    {
+      "name": "LLE",
+      "mean": 2.28,
+      "low": 1.518,
+      "high": 3.043
+    },
+    {
+      "name": "PacMAP",
+      "mean": 3.091,
+      "low": 2.644,
+      "high": 3.51
+    },
+    {
+      "name": "Trimap",
+      "mean": 3.255,
+      "low": 2.795,
+      "high": 3.716
+    },
+    {
+      "name": "UMAP (PCA)",
+      "mean": 7.088,
+      "low": 6.518,
+      "high": 7.644
+    },
+    {
+      "name": "L-MDS",
+      "mean": 7.225,
+      "low": 2.823,
+      "high": 11.614
+    },
+    {
+      "name": "UMAP",
+      "mean": 7.651,
+      "low": 6.971,
+      "high": 8.317
+    },
+    {
+      "name": "Isomap",
+      "mean": 18.146,
+      "low": 11.806,
+      "high": 24.471
+    },
+    {
+      "name": "t-SNE",
+      "mean": 20.989,
+      "low": 16.806,
+      "high": 25.158
+    }
+  ]
+}
