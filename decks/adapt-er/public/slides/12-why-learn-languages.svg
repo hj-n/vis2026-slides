@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-12 desc-12">
+  <title id="title-12">If AI Can Translate Everything, Why Learn Another Language?</title>
+  <desc id="desc-12">Personal reflection. Speaker reflection; not an empirical paper finding</desc>
+  <defs>
+    <marker id="arrow-ink-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">12 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">If AI Can Translate Everything,</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Why Learn Another Language?</text>
+  <text x="112" y="425" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">TRANSLATE FOR ME</text>
+  <text x="1040" y="425" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">HELP ME LEARN</text>
+  <text x="112" y="585" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Original</text>
+  <text x="112" y="634" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">language</text>
+  <line x1="342" y1="605" x2="412" y2="605" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-12)" />
+  <text x="452" y="585" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Translation</text>
+  <text x="452" y="634" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">layer</text>
+  <line x1="672" y1="605" x2="722" y2="605" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-12)" />
+  <circle cx="787" cy="570" r="24" fill="#FFFFFF" stroke="#66717A" stroke-width="2" />
+  <path d="M745 647 Q745 605 787 605 Q829 605 829 647" stroke="#66717A" stroke-width="2" fill="none" />
+  <text x="1040" y="585" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Original</text>
+  <text x="1040" y="634" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">language</text>
+  <line x1="1270" y1="605" x2="1340" y2="605" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-12)" />
+  <text x="1380" y="585" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Supported</text>
+  <text x="1380" y="634" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">reading</text>
+  <line x1="1600" y1="605" x2="1650" y2="605" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-12)" />
+  <circle cx="1715" cy="570" r="24" fill="#FFFFFF" stroke="#66717A" stroke-width="2" />
+  <path d="M1673 647 Q1673 605 1715 605 Q1757 605 1757 647" stroke="#66717A" stroke-width="2" fill="none" />
+  <text x="112" y="812" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Understand a message</text>
+  <text x="1040" y="812" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Build a relationship with a language</text>
+  <text x="112" y="935" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Language connects us with people, culture, and history.</text>
+</svg>

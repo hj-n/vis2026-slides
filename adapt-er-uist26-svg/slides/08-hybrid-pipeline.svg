@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-8 desc-8">
+  <title id="title-8">Let Code Count. Let LLMs Understand.</title>
+  <desc id="desc-8">Hybrid pipeline. Fig. 3 on p. 7; Table 1 on p. 8; §5.5</desc>
+  <defs>
+    <marker id="arrow-ink-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">08 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Let Code Count. Let LLMs Understand.</text>
+  <text x="136" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">CODE</text>
+  <text x="136" y="413" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Match the profile</text>
+  <text x="136" y="459" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Count words</text>
+  <text x="136" y="505" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Set the 5% budget</text>
+  <line x1="518" y1="485" x2="538" y2="485" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-8)" />
+  <text x="568" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">LLM</text>
+  <text x="568" y="413" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Rank unfamiliar words</text>
+  <text x="568" y="459" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">by their importance</text>
+  <text x="568" y="505" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">in context</text>
+  <line x1="950" y1="485" x2="970" y2="485" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-8)" />
+  <text x="1000" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">CODE</text>
+  <text x="1000" y="413" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Build Keep / Simplify</text>
+  <text x="1000" y="459" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">lists and split text</text>
+  <text x="1000" y="505" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">into paragraphs</text>
+  <line x1="1382" y1="485" x2="1402" y2="485" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-8)" />
+  <text x="1432" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">LLM</text>
+  <text x="1497" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">+</text>
+  <text x="1527" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">CODE</text>
+  <text x="1432" y="413" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Rewrite paragraphs</text>
+  <text x="1432" y="459" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">in parallel, then</text>
+  <text x="1432" y="505" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">reassemble</text>
+  <text x="112" y="817" font-family="Arial, Helvetica, sans-serif" font-size="88" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">5.71%</text>
+  <text x="112" y="873" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean unfamiliar words</text>
+  <text x="730" y="817" font-family="Arial, Helvetica, sans-serif" font-size="88" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">4.8 s</text>
+  <text x="730" y="873" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean time per article</text>
+  <text x="1350" y="817" font-family="Arial, Helvetica, sans-serif" font-size="88" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">$0.02</text>
+  <text x="1350" y="873" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">cost per article</text>
+</svg>

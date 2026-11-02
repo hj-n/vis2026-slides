@@ -1,0 +1,96 @@
+{
+  "issues": [],
+  "slides": [
+    {
+      "slide": 1,
+      "textElements": 12,
+      "minFont": 22,
+      "notesWords": 64,
+      "plannedSeconds": 25
+    },
+    {
+      "slide": 2,
+      "textElements": 11,
+      "minFont": 22,
+      "notesWords": 82,
+      "plannedSeconds": 40
+    },
+    {
+      "slide": 3,
+      "textElements": 8,
+      "minFont": 22,
+      "notesWords": 79,
+      "plannedSeconds": 40
+    },
+    {
+      "slide": 4,
+      "textElements": 21,
+      "minFont": 22,
+      "notesWords": 89,
+      "plannedSeconds": 40
+    },
+    {
+      "slide": 5,
+      "textElements": 29,
+      "minFont": 22,
+      "notesWords": 128,
+      "plannedSeconds": 65
+    },
+    {
+      "slide": 6,
+      "textElements": 26,
+      "minFont": 22,
+      "notesWords": 85,
+      "plannedSeconds": 40
+    },
+    {
+      "slide": 7,
+      "textElements": 19,
+      "minFont": 22,
+      "notesWords": 83,
+      "plannedSeconds": 40
+    },
+    {
+      "slide": 8,
+      "textElements": 27,
+      "minFont": 22,
+      "notesWords": 100,
+      "plannedSeconds": 45
+    },
+    {
+      "slide": 9,
+      "textElements": 22,
+      "minFont": 22,
+      "notesWords": 57,
+      "plannedSeconds": 30
+    },
+    {
+      "slide": 10,
+      "textElements": 7,
+      "minFont": 46,
+      "notesWords": 124,
+      "plannedSeconds": 60
+    },
+    {
+      "slide": 11,
+      "textElements": 10,
+      "minFont": 42,
+      "notesWords": 65,
+      "plannedSeconds": 30
+    },
+    {
+      "slide": 12,
+      "textElements": 17,
+      "minFont": 22,
+      "notesWords": 79,
+      "plannedSeconds": 40
+    },
+    {
+      "slide": 13,
+      "textElements": 7,
+      "minFont": 22,
+      "notesWords": 89,
+      "plannedSeconds": 45
+    }
+  ]
+}

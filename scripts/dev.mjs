@@ -10,12 +10,13 @@ const decks = [
   { base: '/dab/', entry: 'decks/distortion-aware-brushing/slides.md', port: 3056 },
   { base: '/misuse/', entry: 'decks/stop-misusing/slides.md', port: 3057 },
   { base: '/umato/', entry: 'decks/umato/slides.md', port: 3058 },
+  { base: '/adapt-er/', entry: 'decks/adapt-er/slides.md', port: 3059 },
 ];
 const children = decks.map(deck => spawn(process.execPath, [cli, deck.entry, '--port', String(deck.port), '--base', deck.base], {
   stdio: 'inherit', env: { ...process.env, VIS_PRESENTATIONS_PROXY_PORT: String(port) },
 }));
 const route = url => decks.find(deck => url.split('?')[0].startsWith(deck.base));
-const requestDeck = req => route(req.url) || (req.url.startsWith('/@server-reactive/') && req.headers.referer
+const requestDeck = req => route(req.url) || ((req.url.startsWith('/@server-reactive/') || req.url.startsWith('/__slidev/')) && req.headers.referer
   ? route(new URL(req.headers.referer).pathname) : undefined);
 const server = http.createServer((req, res) => {
   const path = req.url.split('?')[0];
@@ -62,4 +63,4 @@ for (const child of children) {
   child.on('exit', code => { if (!stopping) stop(code || 1); });
 }
 server.on('error', error => { console.error(error.message); stop(1); });
-server.listen(port, () => console.log(`\nVisualization Autocomplete: http://localhost:${port}/visauto/\nDistortion-aware Brushing: http://localhost:${port}/dab/\nStop Misusing t-SNE and UMAP: http://localhost:${port}/misuse/\nUMATO: http://localhost:${port}/umato/\n`));
+server.listen(port, () => console.log(`\nVisualization Autocomplete: http://localhost:${port}/visauto/\nDistortion-aware Brushing: http://localhost:${port}/dab/\nStop Misusing t-SNE and UMAP: http://localhost:${port}/misuse/\nUMATO: http://localhost:${port}/umato/\nAdapt-ER (UIST 2026): http://localhost:${port}/adapt-er/\n`));

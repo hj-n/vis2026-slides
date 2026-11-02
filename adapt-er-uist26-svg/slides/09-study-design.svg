@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-9 desc-9">
+  <title id="title-9">But Does It Actually Help People Read?</title>
+  <desc id="desc-9">Within-subject evaluation. §6.1 on pp. 8–9; Fig. 2 on p. 5</desc>
+  <defs>
+    <marker id="arrow-ink-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">09 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">But Does It Actually Help People Read?</text>
+  <text x="960" y="278" font-family="Arial, Helvetica, sans-serif" font-size="45" fill="#17232D" font-weight="700" text-anchor="middle" xml:space="preserve">12 Korean speakers learning English</text>
+  <text x="112" y="428" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Ordinary web reading</text>
+  <rect x="112" y="465" width="760" height="380" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="113" y="466" width="758" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="517" x2="872" y2="517" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="136" cy="491" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="157" cy="491" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="178" cy="491" r="5" fill="#248765" stroke-width="2" />
+  <text x="220" y="498" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Self-selected news / Google News</text>
+  <text x="142" y="573" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">An article I want to read</text>
+  <text x="142" y="637" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Researchers </text>
+  <rect x="335.0" y="607.96" width="148.0" height="38.94" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="338.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">convened</text>
+  <text x="142" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">to mark a </text>
+  <rect x="284.0" y="661.96" width="145.0" height="38.94" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="287.0" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">milestone</text>
+  <text x="426.0" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">.</text>
+  <text x="160" y="783" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Dictionary + translation tooltip</text>
+  <text x="1048" y="428" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">With Adapt-ER</text>
+  <rect x="1048" y="465" width="760" height="380" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="1049" y="466" width="758" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="1048" y1="517" x2="1808" y2="517" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="1072" cy="491" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="1093" cy="491" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="1114" cy="491" r="5" fill="#248765" stroke-width="2" />
+  <text x="1156" y="498" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Self-selected news / Google News</text>
+  <text x="1078" y="573" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">An article I want to read</text>
+  <text x="1078" y="637" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Researchers </text>
+  <rect x="1271.0" y="607.96" width="134.0" height="38.94" fill="#FDF0EC" stroke-width="1.6" rx="3" />
+  <text x="1274.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#E46C59" font-weight="400" text-anchor="start" xml:space="preserve">gathered</text>
+  <text x="1078" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">to mark a </text>
+  <rect x="1220.0" y="661.96" width="158.0" height="38.94" fill="#EAF5EF" stroke-width="1.6" rx="3" />
+  <text x="1223.0" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">milestone</text>
+  <text x="1375.0" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">.</text>
+  <text x="1096" y="783" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Dictionary + translation tooltip</text>
+</svg>

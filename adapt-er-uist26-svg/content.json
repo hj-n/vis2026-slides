@@ -1,0 +1,145 @@
+[
+  {
+    "number": 1,
+    "slug": "01-wish-i-were-in-detroit",
+    "title": "Adapt-ER: Democratizing Extensive Reading by Tailoring Web Content",
+    "duration": 25,
+    "start": 0,
+    "end": 25,
+    "source": "Paper p. 1; presenter context",
+    "kind": "Paper title and authors; personal opening in notes",
+    "notes": "Today I will present Adapt-ER: Democratizing Extensive Reading by Tailoring Web Content. I wish I were there in Detroit with you. I had planned to attend in person, but a faculty job interview that I could not reschedule means I am presenting remotely. Thank you for having me anyway. Let me begin with something that has followed me throughout my research life: learning English."
+  },
+  {
+    "number": 2,
+    "slug": "02-english-second-job",
+    "title": "Learning English Was Almost a Second Job.",
+    "duration": 40,
+    "start": 25,
+    "end": 65,
+    "source": "Presenter context",
+    "kind": "Personal experience",
+    "notes": "As a non-native English speaker, I have spent a lot of time trying to become more comfortable with the language. But learning English often felt almost like a second job. I already had research to do, papers to read, and other work to finish, and then I needed to find separate time to study English. The challenge was not a lack of reasons to learn. It was the extra task of making room for learning alongside everything else I wanted to do."
+  },
+  {
+    "number": 3,
+    "slug": "03-same-activity",
+    "title": "What If These Were the Same Activity?",
+    "duration": 40,
+    "start": 65,
+    "end": 105,
+    "source": "Design framing; not a tested learning claim",
+    "kind": "Personal motivation and design question",
+    "notes": "That made me wonder whether those two activities really needed to stay separate. What if the things I already wanted to read could also help me learn English? Instead of choosing between reading something interesting and studying the language, I could keep reading, with an appropriate amount of support. This is the motivation behind Adapt-ER. We want to make self-selected web reading more workable for language learners, so that learning can fit into an activity they already care about."
+  },
+  {
+    "number": 4,
+    "slug": "04-web-not-right-level",
+    "title": "The Web Has Everything. Except the Right Difficulty.",
+    "duration": 40,
+    "start": 105,
+    "end": 145,
+    "source": "PDF pp. 2–4, Fig. 2 on p. 5",
+    "kind": "Paper motivation",
+    "notes": "The web gives us an enormous choice of interesting material, but the difficulty of an article rarely matches an individual reader. You encounter an unfamiliar word, stop to look it up, return to the sentence, and then stop again at the next word. Each lookup may help locally, but repeated interruptions can make it hard to keep reading. Extensive reading depends on sustaining that reading activity with interesting, manageable material. So the problem is not simply finding something interesting to read; it is being able to keep reading it."
+  },
+  {
+    "number": 5,
+    "slug": "05-adapt-er-workflow",
+    "title": "The Article Stays. The Difficulty Changes.",
+    "duration": 65,
+    "start": 145,
+    "end": 210,
+    "source": "Fig. 1 on p. 1; Fig. 2 on p. 5; §4",
+    "kind": "System design",
+    "notes": "Adapt-ER is a browser extension that adapts the page the reader already wants to read, rather than sending them to a separate learning library. First, a short vocabulary-profiling step gives the system an initial picture of which words the reader knows. The reader then chooses an article, and Adapt-ER rewrites its text in place to make the vocabulary more manageable while keeping its context. As they read, they can mark individual words as known or unknown through lightweight interactions on the page. That feedback updates the vocabulary profile used for later adaptations, although our short study did not establish a long-term benefit from accumulating those updates. The important interaction-design choice is that the learner keeps control over what to read, while the support stays inside the reading activity."
+  },
+  {
+    "number": 6,
+    "slug": "06-five-percent-challenge",
+    "title": "A Little Difficulty Is the Point.",
+    "duration": 40,
+    "start": 210,
+    "end": 250,
+    "source": "Fig. 1 on p. 1; Fig. 3 on p. 7; §4",
+    "kind": "Difficulty control",
+    "notes": "Our goal is not to remove every unfamiliar word. Adapt-ER uses a target of about five percent unfamiliar words as an operational baseline, leaving room for meaningful challenge. The system keeps some contextually important words, such as milestone, while simplifying other words: convened can become gathered, and interdisciplinary can become between different fields. The exact examples here are adapted from the paper illustrations. Five percent is a controllable design target, not a proven universal optimum for language learning, and rewriting can still introduce meaning changes."
+  },
+  {
+    "number": 7,
+    "slug": "07-llm-baseline-tradeoff",
+    "title": "We Asked an LLM to Do Everything. That Didn't Work.",
+    "duration": 40,
+    "start": 250,
+    "end": 290,
+    "source": "Table 1 on p. 8; §5.3",
+    "kind": "Pipeline evaluation",
+    "notes": "We first asked a language model to adapt an entire article while handling the vocabulary profile and the target ratio. With GPT-5, the mean unfamiliar-word ratio was close to target, at 5.84 percent, but an article took 211.8 seconds on average. The full-article GPT-4.1 baseline was much faster, at 3.4 seconds, but its mean unfamiliar-word ratio was 11.12 percent. Those are two very different failures for a reading tool. We needed both controllable difficulty and a response time that could fit everyday browsing."
+  },
+  {
+    "number": 8,
+    "slug": "08-hybrid-pipeline",
+    "title": "Let Code Count. Let LLMs Understand.",
+    "duration": 45,
+    "start": 290,
+    "end": 335,
+    "source": "Fig. 3 on p. 7; Table 1 on p. 8; §5.5",
+    "kind": "Hybrid pipeline",
+    "notes": "The solution was to divide the work according to what each part can do reliably. Code matches the vocabulary profile, counts occurrences, and calculates the unfamiliar-word budget, while the model ranks unfamiliar words by their importance in context. Code then constructs the Keep and Simplify lists and splits the article into paragraphs. The model rewrites each paragraph with those explicit constraints, and code sends the requests in parallel and reassembles the results. Our selected GPT-4.1 pipeline averaged 5.71 percent unfamiliar words, 4.8 seconds per article, and two cents per article, bringing lexical control near the target without the long wait."
+  },
+  {
+    "number": 9,
+    "slug": "09-study-design",
+    "title": "But Does It Actually Help People Read?",
+    "duration": 30,
+    "start": 335,
+    "end": 365,
+    "source": "§6.1 on pp. 8–9; Fig. 2 on p. 5",
+    "kind": "Within-subject evaluation",
+    "notes": "We evaluated Adapt-ER with twelve native Korean speakers learning English, with self-reported proficiency from A2 to B2. Each person read self-selected Google News articles for twenty minutes per condition, in counterbalanced order. Both conditions had the same dictionary and translation tooltips. We asked whether adapting the page helped them sustain reading, rather than testing their English improvement."
+  },
+  {
+    "number": 10,
+    "slug": "10-study-results",
+    "title": "Less Decoding. More Reading.",
+    "duration": 60,
+    "start": 365,
+    "end": 425,
+    "source": "Fig. 4 on p. 9; Table 2 and §6.3 on p. 10",
+    "kind": "Observed study results",
+    "notes": "Participants read faster with Adapt-ER and used the tooltip less often than when reading ordinary web pages. The paired tests gave a p-value of .00418 for reading speed and .0178 for tooltip use; the arrows show the direction of those findings, not a reconstructed effect size. That suggests the adapted pages reduced the amount of interruption involved in getting through an article. In interviews, participants described a shift from decoding unfamiliar words toward following the meaning, and one participant compared ordinary reading to working through an English exam. Reported pleasure, confidence, relaxation, and motivation were also descriptively higher, although we do not make significance claims for those ratings. These results concern the experience of reading during the session, not demonstrated gains in English proficiency."
+  },
+  {
+    "number": 11,
+    "slug": "11-what-we-did-not-prove",
+    "title": "We Didn't Prove Better English. We Made Reading More Workable.",
+    "duration": 30,
+    "start": 425,
+    "end": 455,
+    "source": "§7.3 and §8 on p. 11",
+    "kind": "Scope and limitations",
+    "notes": "We observed faster reading, fewer lookups, and descriptively higher reported engagement in this small study. We did not demonstrate vocabulary acquisition or long-term gains in English proficiency. The evaluation involved Korean speakers reading English news on a desktop, so other languages, genres, and devices remain open questions. Rewriting can also change meaning, and future systems need stronger safeguards as well as more explicit user control."
+  },
+  {
+    "number": 12,
+    "slug": "12-why-learn-languages",
+    "title": "If AI Can Translate Everything, Why Learn Another Language?",
+    "duration": 40,
+    "start": 455,
+    "end": 495,
+    "source": "Speaker reflection; not an empirical paper finding",
+    "kind": "Personal reflection",
+    "notes": "This brings me to a question beyond our study: if AI can translate everything, why learn another language? Translation is useful, and I do not want to argue against it. But learning a language can build a relationship with people, culture, and history. Sometimes I want more than an answer in a language I know; I want help getting closer to the original. Adapt-ER makes me interested in AI that supports learning, alongside AI that can speak for us."
+  },
+  {
+    "number": 13,
+    "slug": "13-world-more-learnable",
+    "title": "Make the World More Learnable.",
+    "duration": 45,
+    "start": 495,
+    "end": 540,
+    "source": "Speaker vision; not a tested cross-language claim",
+    "kind": "Closing vision",
+    "notes": "That is the future I hope this interaction points toward: making the world more learnable through the things we already want to do. Adapt-ER offers one small example, adapting English news in the reading context, with much more still to investigate. Extending this idea to other languages is a design opportunity, not something this study has established. The future I hope for is not one where we never have to learn another language. It's one where learning a language no longer has to be a separate task. Thank you."
+  }
+]

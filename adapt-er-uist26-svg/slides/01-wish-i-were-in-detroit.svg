@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-1 desc-1">
+  <title id="title-1">Adapt-ER: Democratizing Extensive Reading by Tailoring Web Content</title>
+  <desc id="desc-1">Paper title and authors; personal opening in notes. Paper p. 1; presenter context</desc>
+  <defs>
+    <marker id="arrow-ink-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">01 / 13</text>
+  <text x="112" y="176" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">UIST 2026</text>
+  <text x="112" y="335" font-family="Arial, Helvetica, sans-serif" font-size="106" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Adapt-ER</text>
+  <text x="112" y="440" font-family="Arial, Helvetica, sans-serif" font-size="67" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Democratizing Extensive Reading</text>
+  <text x="112" y="524" font-family="Arial, Helvetica, sans-serif" font-size="67" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">by Tailoring Web Content</text>
+  <text x="112" y="681" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Yungun Kim¹, Min Hyeong Kim¹, Suyeon Hwang¹, Gahyun Kim²,</text>
+  <text x="112" y="739" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Seokweon Jung¹, </text>
+  <text x="390.0" y="739" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Hyeon Jeon</text>
+  <text x="585.0" y="739" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">³, and Jinwook Seo¹</text>
+  <text x="112" y="846" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">¹ Seoul National University    ² Samsung Electronics</text>
+  <text x="112" y="895" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">³ Aarhus University</text>
+</svg>

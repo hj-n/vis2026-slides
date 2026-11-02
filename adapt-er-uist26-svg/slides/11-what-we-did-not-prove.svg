@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-11 desc-11">
+  <title id="title-11">We Didn't Prove Better English. We Made Reading More Workable.</title>
+  <desc id="desc-11">Scope and limitations. §7.3 and §8 on p. 11</desc>
+  <defs>
+    <marker id="arrow-ink-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">We Didn’t Prove Better English.</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">We Made Reading More Workable.</text>
+  <text x="112" y="430" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">What we observed</text>
+  <text x="1040" y="430" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Open questions</text>
+  <text x="112" y="550" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Faster reading</text>
+  <text x="112" y="670" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Fewer lookups</text>
+  <text x="112" y="790" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Higher reported engagement</text>
+  <text x="1040" y="550" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Long-term language gains</text>
+  <text x="1040" y="670" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Other languages</text>
+  <text x="1040" y="790" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Other genres and devices</text>
+</svg>

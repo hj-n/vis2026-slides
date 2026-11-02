@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-3 desc-3">
+  <title id="title-3">What If These Were the Same Activity?</title>
+  <desc id="desc-3">Personal motivation and design question. Design framing; not a tested learning claim</desc>
+  <defs>
+    <marker id="arrow-ink-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">03 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">What If These Were the Same Activity?</text>
+  <text x="112" y="470" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Reading</text>
+  <text x="112" y="710" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">Learning</text>
+  <text x="540" y="470" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Read things I care about</text>
+  <line x1="940" y1="530" x2="940" y2="615" stroke="#2771C9" stroke-width="7" marker-end="url(#arrow-blue-3)" />
+  <text x="540" y="710" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">Learn English along the way</text>
+  <text x="112" y="919" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">What if the things I already read could also help me learn?</text>
+</svg>

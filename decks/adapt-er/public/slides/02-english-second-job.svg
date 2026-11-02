@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-2 desc-2">
+  <title id="title-2">Learning English Was Almost a Second Job.</title>
+  <desc id="desc-2">Personal experience. Presenter context</desc>
+  <defs>
+    <marker id="arrow-ink-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">02 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Learning English Was</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Almost a Second Job.</text>
+  <text x="112" y="385" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">My primary work</text>
+  <text x="112" y="478" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Research</text>
+  <text x="710" y="478" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Reading</text>
+  <text x="1308" y="478" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Work</text>
+  <line x1="112" y1="560" x2="1808" y2="560" stroke="#CED5DA" stroke-width="1.5" />
+  <text x="112" y="683" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">Studying English</text>
+  <text x="112" y="762" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Essential, but still a secondary task.</text>
+  <text x="112" y="880" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Something I had to make extra time for.</text>
+</svg>

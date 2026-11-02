@@ -1,0 +1,50 @@
+{
+  "paper": "Democratizing Extensive Reading by Tailoring Web Content",
+  "doi": "10.1145/3830398.3830676",
+  "license": "CC BY 4.0",
+  "pdfPages": 16,
+  "pdfSha256": "9d1cb03b0706046df37b97b0eedfa9190836ef422161bcdce771b01b2c22ca01",
+  "table1": {
+    "GPT-5 Iteration 1": {
+      "unknownPercentMean": 5.84,
+      "unknownPercentSpread": 1.32,
+      "secondsMean": 211.8,
+      "secondsSpread": 3.3,
+      "usdPerArticle": 0.16
+    },
+    "GPT-4.1 Iteration 1": {
+      "unknownPercentMean": 11.12,
+      "unknownPercentSpread": 6.92,
+      "secondsMean": 3.4,
+      "secondsSpread": 0.6,
+      "usdPerArticle": "<0.01"
+    },
+    "GPT-4.1 Iteration 3": {
+      "unknownPercentMean": 5.71,
+      "unknownPercentSpread": 1.73,
+      "secondsMean": 4.8,
+      "secondsSpread": 0.6,
+      "usdPerArticle": 0.02,
+      "bertScore": 0.9663,
+      "humanScore": 4.67
+    }
+  },
+  "study": {
+    "participants": 12,
+    "nativeLanguage": "Korean",
+    "targetLanguage": "English",
+    "selfReportedCEFR": "A2–B2",
+    "minutesPerCondition": 20,
+    "design": "within-subject, counterbalanced",
+    "source": "self-selected Google News",
+    "tooltip": "same dictionary/translation extension in both conditions"
+  },
+  "figure4": {
+    "readingSpeedP": 0.00418,
+    "tooltipUseP": 0.0178,
+    "meansDigitized": false
+  },
+  "table2": "descriptively higher self-reported engagement; no significance claims",
+  "learningGainsDemonstrated": false,
+  "crossLanguageGeneralizationDemonstrated": false
+}

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-7 desc-7">
+  <title id="title-7">We Asked an LLM to Do Everything. That Didn't Work.</title>
+  <desc id="desc-7">Pipeline evaluation. Table 1 on p. 8; §5.3</desc>
+  <defs>
+    <marker id="arrow-ink-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">07 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">We Asked an LLM to Do Everything.</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">That Didn’t Work.</text>
+  <text x="960" y="315" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="middle" xml:space="preserve">Target: ~5% unfamiliar words</text>
+  <line x1="960" y1="365" x2="960" y2="906" stroke="#CED5DA" stroke-width="2" />
+  <text x="112" y="402" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">GPT-5</text>
+  <text x="112" y="450" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Full-article adaptation</text>
+  <text x="112" y="585" font-family="Arial, Helvetica, sans-serif" font-size="106" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">5.84%</text>
+  <text x="112" y="636" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean unfamiliar-word ratio</text>
+  <text x="112" y="755" font-family="Arial, Helvetica, sans-serif" font-size="83" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">211.8 s</text>
+  <text x="112" y="804" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean completion time per article</text>
+  <text x="112" y="904" font-family="Arial, Helvetica, sans-serif" font-size="39" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Accurate, but too slow</text>
+  <text x="1040" y="402" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">GPT-4.1</text>
+  <text x="1040" y="450" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Full-article adaptation</text>
+  <text x="1040" y="585" font-family="Arial, Helvetica, sans-serif" font-size="106" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">11.12%</text>
+  <text x="1040" y="636" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean unfamiliar-word ratio</text>
+  <text x="1040" y="755" font-family="Arial, Helvetica, sans-serif" font-size="83" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">3.4 s</text>
+  <text x="1040" y="804" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean completion time per article</text>
+  <text x="1040" y="904" font-family="Arial, Helvetica, sans-serif" font-size="39" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Fast, but off target</text>
+</svg>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-5 desc-5">
+  <title id="title-5">The Article Stays. The Difficulty Changes.</title>
+  <desc id="desc-5">System design. Fig. 1 on p. 1; Fig. 2 on p. 5; §4</desc>
+  <defs>
+    <marker id="arrow-ink-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">05 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">The Article Stays. The Difficulty Changes.</text>
+  <text x="112" y="300" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">0. Profile</text>
+  <rect x="112" y="335" width="500" height="450" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="113" y="336" width="498" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="387" x2="612" y2="387" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="136" cy="361" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="157" cy="361" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="178" cy="361" r="5" fill="#248765" stroke-width="2" />
+  <text x="220" y="368" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Article / Adapt-ER</text>
+  <text x="710" y="300" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">1. Choose</text>
+  <rect x="710" y="335" width="500" height="450" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="711" y="336" width="498" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="710" y1="387" x2="1210" y2="387" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="734" cy="361" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="755" cy="361" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="776" cy="361" r="5" fill="#248765" stroke-width="2" />
+  <text x="818" y="368" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Article / Adapt-ER</text>
+  <text x="1308" y="300" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">2. Read &amp; refine</text>
+  <rect x="1308" y="335" width="500" height="450" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="1309" y="336" width="498" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="1308" y1="387" x2="1808" y2="387" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="1332" cy="361" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="1353" cy="361" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="1374" cy="361" r="5" fill="#248765" stroke-width="2" />
+  <text x="1416" y="368" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Article / Adapt-ER</text>
+  <text x="142" y="450" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">A brief vocabulary check</text>
+  <rect x="142" y="489" width="28" height="28" fill="#FFFFFF" stroke="#CED5DA" stroke-width="2" rx="3" />
+  <text x="190" y="520" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">convened</text>
+  <rect x="142" y="562" width="28" height="28" fill="#FFFFFF" stroke="#CED5DA" stroke-width="2" rx="3" />
+  <text x="190" y="593" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">milestone</text>
+  <rect x="142" y="635" width="28" height="28" fill="#FFFFFF" stroke="#CED5DA" stroke-width="2" rx="3" />
+  <text x="190" y="666" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">interdisciplinary</text>
+  <text x="142" y="752" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Build a vocabulary profile</text>
+  <text x="740" y="450" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Choose an article</text>
+  <text x="740" y="497" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">you want to read</text>
+  <text x="740" y="590" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#2771C9" font-weight="400" text-anchor="start" xml:space="preserve">Science news</text>
+  <text x="740" y="660" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#2771C9" font-weight="400" text-anchor="start" xml:space="preserve">Design and technology</text>
+  <text x="740" y="730" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#2771C9" font-weight="400" text-anchor="start" xml:space="preserve">Culture and society</text>
+  <text x="1338" y="456" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">A </text>
+  <rect x="1364.96875" y="427.84" width="157.0" height="37.76" fill="#EAF5EF" stroke-width="1.6" rx="3" />
+  <text x="1367.96875" y="456" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">milestone</text>
+  <text x="1518.96875" y="456" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve"> in</text>
+  <text x="1338" y="505" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">collaboration </text>
+  <rect x="1335" y="527.6" width="316.984375" height="35.4" fill="#FDF0EC" stroke-width="1.6" rx="3" />
+  <text x="1338" y="554" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#E46C59" font-weight="400" text-anchor="start" xml:space="preserve">between different fields</text>
+  <text x="1358" y="637" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Mark words as:</text>
+  <text x="1358" y="683" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">Known</text>
+  <text x="1515" y="683" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">Unknown</text>
+  <text x="1338" y="752" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Feedback stays on the page</text>
+  <line x1="635" y1="550" x2="685" y2="550" stroke="#2771C9" stroke-width="3" marker-end="url(#arrow-blue-5)" />
+  <line x1="1233" y1="550" x2="1283" y2="550" stroke="#2771C9" stroke-width="3" marker-end="url(#arrow-blue-5)" />
+  <path d="M1558 808 V860 H362 V808" stroke="#2771C9" stroke-width="2" fill="none" marker-end="url(#arrow-blue-5)" />
+  <text x="960" y="922" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#2771C9" font-weight="400" text-anchor="middle" xml:space="preserve">Vocabulary profile → adaptation → updated profile</text>
+</svg>

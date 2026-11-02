@@ -13,6 +13,7 @@ npm run dev
 - Distortion-aware Brushing: http://localhost:3045/dab/
 - Stop Misusing t-SNE and UMAP: http://localhost:3045/misuse/
 - UMATO: http://localhost:3045/umato/
+- Adapt-ER (UIST 2026): http://localhost:3045/adapt-er/
 
 Presenter mode: append `#/presenter/` to any deck URL. Changes to the slide sources update the browser automatically.
 
@@ -39,7 +40,7 @@ npm run build
 npm run export:autocomplete
 ```
 
-The static builds are written to `dist/visauto/`, `dist/dab/`, `dist/misuse/`, and `dist/umato/`. Serve the `dist/` directory to use the same URLs in production. PDF export requires Playwright Chromium.
+The static builds are written to `dist/visauto/`, `dist/dab/`, `dist/misuse/`, `dist/umato/`, and `dist/adapt-er/`. Serve the `dist/` directory to use the same URLs in production. PDF export requires Playwright Chromium.
 
 ## 2. Distortion-aware Brushing
 
@@ -72,6 +73,12 @@ The optimization animation uses genuine epoch snapshots recorded by `scripts/ani
 
 The closing slide is shared at `shared/components/VisClosing.vue`; each deck specifies how many completed talks to cross out.
 
+## 5. Adapt-ER (UIST 2026)
+
+Open http://localhost:3045/adapt-er/#/1. The deck contains 13 editable SVG slides with an English speaker script planned for nine minutes. Presenter notes are at http://localhost:3045/adapt-er/#/presenter/1.
+
+The final SVG sources, offline viewer, English notes, previews, source map, and QA report are in `adapt-er-uist26-svg/`. See its README for regeneration and direct-SVG editing instructions. Slidev sources are in `decks/adapt-er/`; build with `npm run build:adapt-er`.
+
 ## GitHub Pages
 
 The `main` branch deploys automatically through `.github/workflows/pages.yml`.
@@ -80,6 +87,7 @@ The `main` branch deploys automatically through `.github/workflows/pages.yml`.
 - `/vis2026-slides/dab/`: Distortion-aware Brushing
 - `/vis2026-slides/misuse/`: Stop Misusing t-SNE and UMAP
 - `/vis2026-slides/umato/`: UMATO
+- `/vis2026-slides/adapt-er/`: Adapt-ER (UIST 2026)
 
 For a local production build with the Pages prefix:
 
@@ -87,4 +95,4 @@ For a local production build with the Pages prefix:
 VIS_SLIDES_BASE=/vis2026-slides npm run build
 ```
 
-`npm run dev` continues to use `/visauto/`, `/dab/`, `/misuse/`, and `/umato/` without the repository prefix.
+`npm run dev` continues to use `/visauto/`, `/dab/`, `/misuse/`, `/umato/`, and `/adapt-er/` without the repository prefix.

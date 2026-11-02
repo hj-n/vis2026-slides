@@ -3,3 +3,5 @@ dist/
 .slidev/
 .DS_Store
 *.pdf
+__pycache__/
+*.pyc

@@ -1,0 +1,676 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Best Language Lesson Is Not a Lesson — Adapt-ER</title><style>
+*{box-sizing:border-box}body{margin:0;background:#e8ebed;font-family:Arial,Helvetica,sans-serif;color:#17232D}main{height:100vh;display:flex;align-items:center;justify-content:center;padding:12px}.slide{display:none;width:min(calc((100vh - 24px)*16/9),calc(100vw - 24px));aspect-ratio:16/9;background:white}.slide.active{display:block}.slide>svg{width:100%;height:100%;display:block}.notes{display:none;position:fixed;right:0;top:0;width:31vw;height:100vh;padding:30px;overflow:auto;background:#fff;border-left:1px solid #ced5da;font-size:19px;line-height:1.6}.presenter main{width:69vw}.presenter .slide{width:min(calc((100vh - 24px)*16/9),calc(69vw - 24px))}.presenter .notes{display:block}.notes h2{font-size:24px;line-height:1.3}.notes .timing{color:#66717a;font-size:17px}nav{position:fixed;bottom:12px;left:12px;display:flex;gap:8px;opacity:0;transition:opacity .15s}nav:hover,nav:focus-within{opacity:1}button{background:white;border:1px solid #ced5da;padding:8px 12px;border-radius:4px;font:15px Arial;cursor:pointer}#hint{position:fixed;left:16px;top:12px;font:14px Arial;color:#66717a;opacity:0}body:hover #hint{opacity:.8}@media print{main{height:auto;display:block;padding:0}.slide{display:block!important;width:100%;page-break-after:always}.notes,nav,#hint{display:none!important}@page{size:landscape;margin:0}}
+</style></head><body><main><section class="slide" data-slide="1" aria-label="Adapt-ER: Democratizing Extensive Reading by Tailoring Web Content">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-1 desc-1">
+  <title id="title-1">Adapt-ER: Democratizing Extensive Reading by Tailoring Web Content</title>
+  <desc id="desc-1">Paper title and authors; personal opening in notes. Paper p. 1; presenter context</desc>
+  <defs>
+    <marker id="arrow-ink-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-1" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">01 / 13</text>
+  <text x="112" y="176" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">UIST 2026</text>
+  <text x="112" y="335" font-family="Arial, Helvetica, sans-serif" font-size="106" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Adapt-ER</text>
+  <text x="112" y="440" font-family="Arial, Helvetica, sans-serif" font-size="67" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Democratizing Extensive Reading</text>
+  <text x="112" y="524" font-family="Arial, Helvetica, sans-serif" font-size="67" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">by Tailoring Web Content</text>
+  <text x="112" y="681" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Yungun Kim¹, Min Hyeong Kim¹, Suyeon Hwang¹, Gahyun Kim²,</text>
+  <text x="112" y="739" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Seokweon Jung¹, </text>
+  <text x="390.0" y="739" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Hyeon Jeon</text>
+  <text x="585.0" y="739" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">³, and Jinwook Seo¹</text>
+  <text x="112" y="846" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">¹ Seoul National University    ² Samsung Electronics</text>
+  <text x="112" y="895" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">³ Aarhus University</text>
+</svg></section>
+<section class="slide" data-slide="2" aria-label="Learning English Was Almost a Second Job.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-2 desc-2">
+  <title id="title-2">Learning English Was Almost a Second Job.</title>
+  <desc id="desc-2">Personal experience. Presenter context</desc>
+  <defs>
+    <marker id="arrow-ink-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">02 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Learning English Was</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Almost a Second Job.</text>
+  <text x="112" y="385" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">My primary work</text>
+  <text x="112" y="478" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Research</text>
+  <text x="710" y="478" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Reading</text>
+  <text x="1308" y="478" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Work</text>
+  <line x1="112" y1="560" x2="1808" y2="560" stroke="#CED5DA" stroke-width="1.5" />
+  <text x="112" y="683" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">Studying English</text>
+  <text x="112" y="762" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Essential, but still a secondary task.</text>
+  <text x="112" y="880" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Something I had to make extra time for.</text>
+</svg></section>
+<section class="slide" data-slide="3" aria-label="What If These Were the Same Activity?">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-3 desc-3">
+  <title id="title-3">What If These Were the Same Activity?</title>
+  <desc id="desc-3">Personal motivation and design question. Design framing; not a tested learning claim</desc>
+  <defs>
+    <marker id="arrow-ink-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-3" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">03 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">What If These Were the Same Activity?</text>
+  <text x="112" y="470" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Reading</text>
+  <text x="112" y="710" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">Learning</text>
+  <text x="540" y="470" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Read things I care about</text>
+  <line x1="940" y1="530" x2="940" y2="615" stroke="#2771C9" stroke-width="7" marker-end="url(#arrow-blue-3)" />
+  <text x="540" y="710" font-family="Arial, Helvetica, sans-serif" font-size="58" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">Learn English along the way</text>
+  <text x="112" y="919" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">What if the things I already read could also help me learn?</text>
+</svg></section>
+<section class="slide" data-slide="4" aria-label="The Web Has Everything. Except the Right Difficulty.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-4 desc-4">
+  <title id="title-4">The Web Has Everything. Except the Right Difficulty.</title>
+  <desc id="desc-4">Paper motivation. PDF pp. 2–4, Fig. 2 on p. 5</desc>
+  <defs>
+    <marker id="arrow-ink-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">04 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">The Web Has Everything.</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Except the Right Difficulty.</text>
+  <rect x="112" y="330" width="1045" height="585" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="113" y="331" width="1043" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="382" x2="1157" y2="382" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="136" cy="356" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="157" cy="356" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="178" cy="356" r="5" fill="#248765" stroke-width="2" />
+  <text x="220" y="363" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">A news article I chose</text>
+  <text x="148" y="442" font-family="Arial, Helvetica, sans-serif" font-size="39" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">A milestone for collaboration</text>
+  <text x="148" y="526" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Researchers </text>
+  <rect x="371.0" y="492.56" width="170.0" height="44.839999999999996" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="374.0" y="526" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">convened</text>
+  <text x="538.0" y="526" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve"> to explore</text>
+  <text x="148" y="589" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">new ideas and </text>
+  <rect x="400.0" y="555.56" width="266.0" height="44.839999999999996" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="403.0" y="589" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">interdisciplinary</text>
+  <text x="148" y="652" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">collaboration.</text>
+  <line x1="148" y1="705" x2="1060" y2="705" stroke="#CED5DA" stroke-width="1" />
+  <line x1="148" y1="746" x2="1010" y2="746" stroke="#CED5DA" stroke-width="1" />
+  <line x1="148" y1="787" x2="1040" y2="787" stroke="#CED5DA" stroke-width="1" />
+  <rect x="696" y="624" width="407" height="206" fill="#FFFFFF" stroke="#D9902F" stroke-width="2" rx="8" />
+  <text x="722" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">interdisciplinary</text>
+  <text x="722" y="722" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">between different</text>
+  <text x="722" y="764" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">fields of study</text>
+  <text x="722" y="807" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">look up, then return</text>
+  <text x="1300" y="409" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Read</text>
+  <line x1="1330" y1="437" x2="1330" y2="494" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-4)" />
+  <text x="1300" y="544" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">Stop</text>
+  <line x1="1330" y1="572" x2="1330" y2="629" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-4)" />
+  <text x="1300" y="679" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">Look up</text>
+  <line x1="1330" y1="707" x2="1330" y2="764" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-4)" />
+  <text x="1300" y="814" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Resume</text>
+  <path d="M1575 814 H1740 V380 H1635" stroke="#66717A" stroke-width="2" fill="none" marker-end="url(#arrow-muted-4)" />
+  <text x="1300" y="925" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Again and again.</text>
+</svg></section>
+<section class="slide" data-slide="5" aria-label="The Article Stays. The Difficulty Changes.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-5 desc-5">
+  <title id="title-5">The Article Stays. The Difficulty Changes.</title>
+  <desc id="desc-5">System design. Fig. 1 on p. 1; Fig. 2 on p. 5; §4</desc>
+  <defs>
+    <marker id="arrow-ink-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-5" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">05 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">The Article Stays. The Difficulty Changes.</text>
+  <text x="112" y="300" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">0. Profile</text>
+  <rect x="112" y="335" width="500" height="450" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="113" y="336" width="498" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="387" x2="612" y2="387" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="136" cy="361" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="157" cy="361" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="178" cy="361" r="5" fill="#248765" stroke-width="2" />
+  <text x="220" y="368" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Article / Adapt-ER</text>
+  <text x="710" y="300" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">1. Choose</text>
+  <rect x="710" y="335" width="500" height="450" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="711" y="336" width="498" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="710" y1="387" x2="1210" y2="387" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="734" cy="361" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="755" cy="361" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="776" cy="361" r="5" fill="#248765" stroke-width="2" />
+  <text x="818" y="368" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Article / Adapt-ER</text>
+  <text x="1308" y="300" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">2. Read &amp; refine</text>
+  <rect x="1308" y="335" width="500" height="450" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="1309" y="336" width="498" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="1308" y1="387" x2="1808" y2="387" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="1332" cy="361" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="1353" cy="361" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="1374" cy="361" r="5" fill="#248765" stroke-width="2" />
+  <text x="1416" y="368" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Article / Adapt-ER</text>
+  <text x="142" y="450" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">A brief vocabulary check</text>
+  <rect x="142" y="489" width="28" height="28" fill="#FFFFFF" stroke="#CED5DA" stroke-width="2" rx="3" />
+  <text x="190" y="520" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">convened</text>
+  <rect x="142" y="562" width="28" height="28" fill="#FFFFFF" stroke="#CED5DA" stroke-width="2" rx="3" />
+  <text x="190" y="593" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">milestone</text>
+  <rect x="142" y="635" width="28" height="28" fill="#FFFFFF" stroke="#CED5DA" stroke-width="2" rx="3" />
+  <text x="190" y="666" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">interdisciplinary</text>
+  <text x="142" y="752" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Build a vocabulary profile</text>
+  <text x="740" y="450" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Choose an article</text>
+  <text x="740" y="497" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">you want to read</text>
+  <text x="740" y="590" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#2771C9" font-weight="400" text-anchor="start" xml:space="preserve">Science news</text>
+  <text x="740" y="660" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#2771C9" font-weight="400" text-anchor="start" xml:space="preserve">Design and technology</text>
+  <text x="740" y="730" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#2771C9" font-weight="400" text-anchor="start" xml:space="preserve">Culture and society</text>
+  <text x="1338" y="456" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">A </text>
+  <rect x="1364.96875" y="427.84" width="157.0" height="37.76" fill="#EAF5EF" stroke-width="1.6" rx="3" />
+  <text x="1367.96875" y="456" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">milestone</text>
+  <text x="1518.96875" y="456" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve"> in</text>
+  <text x="1338" y="505" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">collaboration </text>
+  <rect x="1335" y="527.6" width="316.984375" height="35.4" fill="#FDF0EC" stroke-width="1.6" rx="3" />
+  <text x="1338" y="554" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#E46C59" font-weight="400" text-anchor="start" xml:space="preserve">between different fields</text>
+  <text x="1358" y="637" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Mark words as:</text>
+  <text x="1358" y="683" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">Known</text>
+  <text x="1515" y="683" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">Unknown</text>
+  <text x="1338" y="752" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Feedback stays on the page</text>
+  <line x1="635" y1="550" x2="685" y2="550" stroke="#2771C9" stroke-width="3" marker-end="url(#arrow-blue-5)" />
+  <line x1="1233" y1="550" x2="1283" y2="550" stroke="#2771C9" stroke-width="3" marker-end="url(#arrow-blue-5)" />
+  <path d="M1558 808 V860 H362 V808" stroke="#2771C9" stroke-width="2" fill="none" marker-end="url(#arrow-blue-5)" />
+  <text x="960" y="922" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#2771C9" font-weight="400" text-anchor="middle" xml:space="preserve">Vocabulary profile → adaptation → updated profile</text>
+</svg></section>
+<section class="slide" data-slide="6" aria-label="A Little Difficulty Is the Point.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-6 desc-6">
+  <title id="title-6">A Little Difficulty Is the Point.</title>
+  <desc id="desc-6">Difficulty control. Fig. 1 on p. 1; Fig. 3 on p. 7; §4</desc>
+  <defs>
+    <marker id="arrow-ink-6" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-6" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-6" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-6" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-6" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-6" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">06 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">A Little Difficulty Is the Point.</text>
+  <text x="112" y="270" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Not 0% unknown.</text>
+  <text x="1808" y="270" font-family="Arial, Helvetica, sans-serif" font-size="54" fill="#D9902F" font-weight="700" text-anchor="end" xml:space="preserve">Target ~5% unfamiliar</text>
+  <rect x="112.0" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="196.8" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="281.6" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="366.4" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="451.2" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="536.0" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="620.8" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="705.6" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="790.4" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="875.1999999999999" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="960.0" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1044.8" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1129.6" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1214.3999999999999" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1299.2" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1384.0" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1468.8" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1553.6" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1638.3999999999999" y="320" width="80.8" height="95" fill="#EAF5EF" stroke="none" stroke-width="1.6" rx="3" />
+  <rect x="1723.2" y="320" width="80.8" height="95" fill="#D9902F" stroke="none" stroke-width="1.6" rx="3" />
+  <text x="112" y="463" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#248765" font-weight="400" text-anchor="start" xml:space="preserve">Familiar vocabulary</text>
+  <text x="1808" y="463" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#D9902F" font-weight="400" text-anchor="end" xml:space="preserve">Meaningful challenge</text>
+  <text x="112" y="520" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">An operational baseline, not a universal optimum for learning.</text>
+  <text x="112" y="611" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Original wording</text>
+  <text x="1020" y="611" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapted wording</text>
+  <text x="112" y="681" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Researchers </text>
+  <rect x="323.0" y="649.32" width="162.0" height="42.48" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="326.0" y="681" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">convened</text>
+  <text x="112" y="742" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">to mark a </text>
+  <rect x="269.0" y="710.32" width="174.0" height="42.48" fill="#EAF5EF" stroke-width="1.6" rx="3" />
+  <text x="272.0" y="742" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">milestone</text>
+  <text x="112" y="803" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">in </text>
+  <rect x="145.0" y="773.08" width="242.0" height="40.12" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="148.0" y="803" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">interdisciplinary</text>
+  <text x="384.0" y="803" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve"> collaboration.</text>
+  <line x1="874" y1="725" x2="976" y2="725" stroke="#66717A" stroke-width="3" marker-end="url(#arrow-muted-6)" />
+  <text x="1020" y="681" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Researchers </text>
+  <rect x="1231.0" y="649.32" width="148.0" height="42.48" fill="#FDF0EC" stroke-width="1.6" rx="3" />
+  <text x="1234.0" y="681" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#E46C59" font-weight="400" text-anchor="start" xml:space="preserve">gathered</text>
+  <text x="1020" y="742" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">to mark a </text>
+  <rect x="1177.0" y="710.32" width="174.0" height="42.48" fill="#EAF5EF" stroke-width="1.6" rx="3" />
+  <text x="1180.0" y="742" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">milestone</text>
+  <text x="1020" y="803" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">in collaboration </text>
+  <rect x="1017" y="823.08" width="363.984375" height="40.12" fill="#FDF0EC" stroke-width="1.6" rx="3" />
+  <text x="1020" y="853" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#E46C59" font-weight="400" text-anchor="start" xml:space="preserve">between different fields.</text>
+  <text x="112" y="941" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">KEEP important new words</text>
+  <text x="795" y="941" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">SIMPLIFY the rest</text>
+  <text x="1395" y="941" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">PRESERVE meaning</text>
+</svg></section>
+<section class="slide" data-slide="7" aria-label="We Asked an LLM to Do Everything. That Didn&#x27;t Work.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-7 desc-7">
+  <title id="title-7">We Asked an LLM to Do Everything. That Didn't Work.</title>
+  <desc id="desc-7">Pipeline evaluation. Table 1 on p. 8; §5.3</desc>
+  <defs>
+    <marker id="arrow-ink-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-7" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">07 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">We Asked an LLM to Do Everything.</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">That Didn’t Work.</text>
+  <text x="960" y="315" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="middle" xml:space="preserve">Target: ~5% unfamiliar words</text>
+  <line x1="960" y1="365" x2="960" y2="906" stroke="#CED5DA" stroke-width="2" />
+  <text x="112" y="402" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">GPT-5</text>
+  <text x="112" y="450" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Full-article adaptation</text>
+  <text x="112" y="585" font-family="Arial, Helvetica, sans-serif" font-size="106" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">5.84%</text>
+  <text x="112" y="636" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean unfamiliar-word ratio</text>
+  <text x="112" y="755" font-family="Arial, Helvetica, sans-serif" font-size="83" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">211.8 s</text>
+  <text x="112" y="804" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean completion time per article</text>
+  <text x="112" y="904" font-family="Arial, Helvetica, sans-serif" font-size="39" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Accurate, but too slow</text>
+  <text x="1040" y="402" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">GPT-4.1</text>
+  <text x="1040" y="450" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Full-article adaptation</text>
+  <text x="1040" y="585" font-family="Arial, Helvetica, sans-serif" font-size="106" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">11.12%</text>
+  <text x="1040" y="636" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean unfamiliar-word ratio</text>
+  <text x="1040" y="755" font-family="Arial, Helvetica, sans-serif" font-size="83" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">3.4 s</text>
+  <text x="1040" y="804" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean completion time per article</text>
+  <text x="1040" y="904" font-family="Arial, Helvetica, sans-serif" font-size="39" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Fast, but off target</text>
+</svg></section>
+<section class="slide" data-slide="8" aria-label="Let Code Count. Let LLMs Understand.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-8 desc-8">
+  <title id="title-8">Let Code Count. Let LLMs Understand.</title>
+  <desc id="desc-8">Hybrid pipeline. Fig. 3 on p. 7; Table 1 on p. 8; §5.5</desc>
+  <defs>
+    <marker id="arrow-ink-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-8" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">08 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Let Code Count. Let LLMs Understand.</text>
+  <text x="136" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">CODE</text>
+  <text x="136" y="413" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Match the profile</text>
+  <text x="136" y="459" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Count words</text>
+  <text x="136" y="505" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Set the 5% budget</text>
+  <line x1="518" y1="485" x2="538" y2="485" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-8)" />
+  <text x="568" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">LLM</text>
+  <text x="568" y="413" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Rank unfamiliar words</text>
+  <text x="568" y="459" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">by their importance</text>
+  <text x="568" y="505" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">in context</text>
+  <line x1="950" y1="485" x2="970" y2="485" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-8)" />
+  <text x="1000" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">CODE</text>
+  <text x="1000" y="413" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Build Keep / Simplify</text>
+  <text x="1000" y="459" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">lists and split text</text>
+  <text x="1000" y="505" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">into paragraphs</text>
+  <line x1="1382" y1="485" x2="1402" y2="485" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-8)" />
+  <text x="1432" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#E46C59" font-weight="700" text-anchor="start" xml:space="preserve">LLM</text>
+  <text x="1497" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">+</text>
+  <text x="1527" y="348" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">CODE</text>
+  <text x="1432" y="413" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Rewrite paragraphs</text>
+  <text x="1432" y="459" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">in parallel, then</text>
+  <text x="1432" y="505" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">reassemble</text>
+  <text x="112" y="817" font-family="Arial, Helvetica, sans-serif" font-size="88" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">5.71%</text>
+  <text x="112" y="873" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean unfamiliar words</text>
+  <text x="730" y="817" font-family="Arial, Helvetica, sans-serif" font-size="88" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">4.8 s</text>
+  <text x="730" y="873" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">mean time per article</text>
+  <text x="1350" y="817" font-family="Arial, Helvetica, sans-serif" font-size="88" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">$0.02</text>
+  <text x="1350" y="873" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">cost per article</text>
+</svg></section>
+<section class="slide" data-slide="9" aria-label="But Does It Actually Help People Read?">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-9 desc-9">
+  <title id="title-9">But Does It Actually Help People Read?</title>
+  <desc id="desc-9">Within-subject evaluation. §6.1 on pp. 8–9; Fig. 2 on p. 5</desc>
+  <defs>
+    <marker id="arrow-ink-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-9" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">09 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">But Does It Actually Help People Read?</text>
+  <text x="960" y="278" font-family="Arial, Helvetica, sans-serif" font-size="45" fill="#17232D" font-weight="700" text-anchor="middle" xml:space="preserve">12 Korean speakers learning English</text>
+  <text x="112" y="428" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Ordinary web reading</text>
+  <rect x="112" y="465" width="760" height="380" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="113" y="466" width="758" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="517" x2="872" y2="517" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="136" cy="491" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="157" cy="491" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="178" cy="491" r="5" fill="#248765" stroke-width="2" />
+  <text x="220" y="498" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Self-selected news / Google News</text>
+  <text x="142" y="573" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">An article I want to read</text>
+  <text x="142" y="637" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Researchers </text>
+  <rect x="335.0" y="607.96" width="148.0" height="38.94" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="338.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">convened</text>
+  <text x="142" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">to mark a </text>
+  <rect x="284.0" y="661.96" width="145.0" height="38.94" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="287.0" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">milestone</text>
+  <text x="426.0" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">.</text>
+  <text x="160" y="783" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Dictionary + translation tooltip</text>
+  <text x="1048" y="428" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">With Adapt-ER</text>
+  <rect x="1048" y="465" width="760" height="380" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="1049" y="466" width="758" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="1048" y1="517" x2="1808" y2="517" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="1072" cy="491" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="1093" cy="491" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="1114" cy="491" r="5" fill="#248765" stroke-width="2" />
+  <text x="1156" y="498" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Self-selected news / Google News</text>
+  <text x="1078" y="573" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">An article I want to read</text>
+  <text x="1078" y="637" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Researchers </text>
+  <rect x="1271.0" y="607.96" width="134.0" height="38.94" fill="#FDF0EC" stroke-width="1.6" rx="3" />
+  <text x="1274.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#E46C59" font-weight="400" text-anchor="start" xml:space="preserve">gathered</text>
+  <text x="1078" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">to mark a </text>
+  <rect x="1220.0" y="661.96" width="158.0" height="38.94" fill="#EAF5EF" stroke-width="1.6" rx="3" />
+  <text x="1223.0" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">milestone</text>
+  <text x="1375.0" y="691" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">.</text>
+  <text x="1096" y="783" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Dictionary + translation tooltip</text>
+</svg></section>
+<section class="slide" data-slide="10" aria-label="Less Decoding. More Reading.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-10 desc-10">
+  <title id="title-10">Less Decoding. More Reading.</title>
+  <desc id="desc-10">Observed study results. Fig. 4 on p. 9; Table 2 and §6.3 on p. 10</desc>
+  <defs>
+    <marker id="arrow-ink-10" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-10" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-10" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-10" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-10" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-10" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Less Decoding. More Reading.</text>
+  <text x="112" y="315" font-family="Arial, Helvetica, sans-serif" font-size="48" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Reading speed</text>
+  <text x="1040" y="315" font-family="Arial, Helvetica, sans-serif" font-size="48" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Tooltip use</text>
+  <path d="M240 640 V440 M202 480 L240 440 L278 480" stroke="#248765" stroke-width="9" fill="none" />
+  <path d="M1168 440 V640 M1130 600 L1168 640 L1206 600" stroke="#2771C9" stroke-width="9" fill="none" />
+  <text x="348" y="564" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">Faster</text>
+  <text x="1276" y="537" font-family="Arial, Helvetica, sans-serif" font-size="65" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">Fewer</text>
+  <text x="1276" y="615" font-family="Arial, Helvetica, sans-serif" font-size="65" fill="#2771C9" font-weight="700" text-anchor="start" xml:space="preserve">lookups</text>
+  <text x="112" y="870" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">From decoding words → understanding meaning</text>
+</svg></section>
+<section class="slide" data-slide="11" aria-label="We Didn&#x27;t Prove Better English. We Made Reading More Workable.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-11 desc-11">
+  <title id="title-11">We Didn't Prove Better English. We Made Reading More Workable.</title>
+  <desc id="desc-11">Scope and limitations. §7.3 and §8 on p. 11</desc>
+  <defs>
+    <marker id="arrow-ink-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-11" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">We Didn’t Prove Better English.</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">We Made Reading More Workable.</text>
+  <text x="112" y="430" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#248765" font-weight="700" text-anchor="start" xml:space="preserve">What we observed</text>
+  <text x="1040" y="430" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">Open questions</text>
+  <text x="112" y="550" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Faster reading</text>
+  <text x="112" y="670" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Fewer lookups</text>
+  <text x="112" y="790" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Higher reported engagement</text>
+  <text x="1040" y="550" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Long-term language gains</text>
+  <text x="1040" y="670" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Other languages</text>
+  <text x="1040" y="790" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Other genres and devices</text>
+</svg></section>
+<section class="slide" data-slide="12" aria-label="If AI Can Translate Everything, Why Learn Another Language?">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-12 desc-12">
+  <title id="title-12">If AI Can Translate Everything, Why Learn Another Language?</title>
+  <desc id="desc-12">Personal reflection. Speaker reflection; not an empirical paper finding</desc>
+  <defs>
+    <marker id="arrow-ink-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-12" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">12 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">If AI Can Translate Everything,</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Why Learn Another Language?</text>
+  <text x="112" y="425" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">TRANSLATE FOR ME</text>
+  <text x="1040" y="425" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">HELP ME LEARN</text>
+  <text x="112" y="585" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Original</text>
+  <text x="112" y="634" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">language</text>
+  <line x1="342" y1="605" x2="412" y2="605" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-12)" />
+  <text x="452" y="585" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Translation</text>
+  <text x="452" y="634" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">layer</text>
+  <line x1="672" y1="605" x2="722" y2="605" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-12)" />
+  <circle cx="787" cy="570" r="24" fill="#FFFFFF" stroke="#66717A" stroke-width="2" />
+  <path d="M745 647 Q745 605 787 605 Q829 605 829 647" stroke="#66717A" stroke-width="2" fill="none" />
+  <text x="1040" y="585" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Original</text>
+  <text x="1040" y="634" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">language</text>
+  <line x1="1270" y1="605" x2="1340" y2="605" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-12)" />
+  <text x="1380" y="585" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Supported</text>
+  <text x="1380" y="634" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">reading</text>
+  <line x1="1600" y1="605" x2="1650" y2="605" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-12)" />
+  <circle cx="1715" cy="570" r="24" fill="#FFFFFF" stroke="#66717A" stroke-width="2" />
+  <path d="M1673 647 Q1673 605 1715 605 Q1757 605 1757 647" stroke="#66717A" stroke-width="2" fill="none" />
+  <text x="112" y="812" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Understand a message</text>
+  <text x="1040" y="812" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Build a relationship with a language</text>
+  <text x="112" y="935" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Language connects us with people, culture, and history.</text>
+</svg></section>
+<section class="slide" data-slide="13" aria-label="Make the World More Learnable.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-13 desc-13">
+  <title id="title-13">Make the World More Learnable.</title>
+  <desc id="desc-13">Closing vision. Speaker vision; not a tested cross-language claim</desc>
+  <defs>
+    <marker id="arrow-ink-13" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-13" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-13" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-13" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-13" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-13" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">13 / 13</text>
+  <text x="960" y="515" font-family="Arial, Helvetica, sans-serif" font-size="96" fill="#17232D" font-weight="700" text-anchor="middle" xml:space="preserve">LLMs will make the world</text>
+  <text x="960" y="635" font-family="Arial, Helvetica, sans-serif" font-size="96" fill="#17232D" font-weight="700" text-anchor="middle" xml:space="preserve">more learnable</text>
+  <text x="960" y="836" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#17232D" font-weight="400" text-anchor="middle" xml:space="preserve">Not just AI that translates for us — AI that helps us learn.</text>
+  <text x="112" y="933" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Thank you.</text>
+  <text x="600" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Democratizing Extensive Reading by Tailoring Web Content</text>
+</svg></section></main><aside class="notes" aria-label="Speaker notes"><p class="timing" id="timing"></p><h2 id="note-title"></h2><p id="note-body"></p><p class="timing" id="note-source"></p></aside><span id="hint">← → slides · P speaker notes · F fullscreen</span><nav aria-label="Slide navigation"><button id="previous">Previous</button><button id="next">Next</button><button id="presenter">Speaker notes</button></nav><script>
+const content=[{"number": 1, "slug": "01-wish-i-were-in-detroit", "title": "Adapt-ER: Democratizing Extensive Reading by Tailoring Web Content", "duration": 25, "start": 0, "end": 25, "source": "Paper p. 1; presenter context", "kind": "Paper title and authors; personal opening in notes", "notes": "Hello, this is Hyeon. Today, I will present Adapt-ER: Democratizing Extensive Reading by Tailoring Web Content. I wish I were there in Detroit with you. I had planned to attend in person, but a faculty job interview that I could not reschedule means I am presenting remotely. Thank you for having me anyway. Let me begin with something that has followed me throughout my research life: learning English."}, {"number": 2, "slug": "02-english-second-job", "title": "Learning English Was Almost a Second Job.", "duration": 40, "start": 25, "end": 65, "source": "Presenter context", "kind": "Personal experience", "notes": "As a non-native English speaker, I have spent a lot of time trying to become more comfortable with the language. But learning English often felt almost like a second job. I already had research to do, papers to read, and other work to finish, and then I needed to find separate time to study English. The challenge was not a lack of reasons to learn. It was the extra task of making room for learning alongside everything else I wanted to do."}, {"number": 3, "slug": "03-same-activity", "title": "What If These Were the Same Activity?", "duration": 40, "start": 65, "end": 105, "source": "Design framing; not a tested learning claim", "kind": "Personal motivation and design question", "notes": "That made me wonder whether those two activities really needed to stay separate. What if the things I already wanted to read could also help me learn English? Instead of choosing between reading something interesting and studying the language, I could keep reading, with an appropriate amount of support. This is the motivation behind Adapt-ER. We want to make self-selected web reading more workable for language learners, so that learning can fit into an activity they already care about."}, {"number": 4, "slug": "04-web-not-right-level", "title": "The Web Has Everything. Except the Right Difficulty.", "duration": 40, "start": 105, "end": 145, "source": "PDF pp. 2–4, Fig. 2 on p. 5", "kind": "Paper motivation", "notes": "Our rationale here is that the web gives us an enormous choice of interesting material, but the difficulty of an article rarely matches an individual reader. You encounter an unfamiliar word, stop to look it up, return to the sentence, and then stop again at the next word. Each lookup may help locally, but repeated interruptions can make it hard to keep reading. Here, studying English depends on sustaining that reading activity with interesting, manageable material. So the problem is not simply finding something interesting to read; it is being able to keep reading it."}, {"number": 5, "slug": "05-adapt-er-workflow", "title": "The Article Stays. The Difficulty Changes.", "duration": 65, "start": 145, "end": 210, "source": "Fig. 1 on p. 1; Fig. 2 on p. 5; §4", "kind": "System design", "notes": "That's why we develop Adapt-ER. Adapt-ER is a browser extension that adapts the page the reader already wants to read to their English proficiency. First, a short vocabulary-profiling step gives the system an initial picture of which words the reader knows. The reader then chooses an article, and Adapt-ER rewrites its text in place to make the vocabulary more manageable while keeping its context. As they read, they can mark individual words as known or unknown through lightweight interactions on the page. That feedback updates the vocabulary profile used for later adaptations, where I would like to clarify that our short study did not establish a long-term benefit from accumulating those updates. The important design rationale is that the learner keeps control over what to read, while the support stays inside the reading activity."}, {"number": 6, "slug": "06-five-percent-challenge", "title": "A Little Difficulty Is the Point.", "duration": 40, "start": 210, "end": 250, "source": "Fig. 1 on p. 1; Fig. 3 on p. 7; §4", "kind": "Difficulty control", "notes": "Here, our goal is not to remove every unfamiliar word. Adapt-ER uses a target of about five percent unfamiliar words as a baseline. The system keeps some contextually important words, such as milestone, in this sleide, while simplifying other words, for example, convened can become gathered, and interdisciplinary can become between different fields. Note that five percent is a controllable design target we set arbitrarily, not a proven universal optimum for language learning."}, {"number": 7, "slug": "07-llm-baseline-tradeoff", "title": "We Asked an LLM to Do Everything. That Didn't Work.", "duration": 40, "start": 250, "end": 290, "source": "Table 1 on p. 8; §5.3", "kind": "Pipeline evaluation", "notes": "So, you'll be curious about how our system works, and whether it is better than naively prompting LLMs. We first asked a language model to adapt an entire article while handling the vocabulary profile and the target ratio. With GPT-5, the mean unfamiliar-word ratio was close to target, around six percent, but an article took more than 200 seconds on average. The GPT-4.1 baseline was much faster, at 3.4 seconds, but its mean unfamiliar-word ratio was over ten percent. Those are two very different failures for a reading tool. We needed both controllable difficulty and a response time that could fit everyday browsing."}, {"number": 8, "slug": "08-hybrid-pipeline", "title": "Let Code Count. Let LLMs Understand.", "duration": 45, "start": 290, "end": 335, "source": "Fig. 3 on p. 7; Table 1 on p. 8; §5.5", "kind": "Hybrid pipeline", "notes": "The solution was to divide the work according to what each part can do reliably. Code matches the vocabulary profile, counts occurrences, and calculates the unfamiliar-word budget, while the model ranks unfamiliar words by their importance in context. Code then constructs the Keep and Simplify lists and splits the article into paragraphs. The model rewrites each paragraph with those explicit constraints, and code sends the requests in parallel and reassembles the results. Our pipeline with GPT-4.1, which is quite a small model, averaged 5.71 percent unfamiliar words, 4.8 seconds per article, and two cents are needed per article; and this results shows that our pipeline anyway worked well."}, {"number": 9, "slug": "09-study-design", "title": "But Does It Actually Help People Read?", "duration": 30, "start": 335, "end": 365, "source": "§6.1 on pp. 8–9; Fig. 2 on p. 5", "kind": "Within-subject evaluation", "notes": "We evaluated Adapt-ER with twelve native Korean speakers learning English. Each person read Google News articles for twenty minutes per condition, one with Adapt-ER and one without, of course, in counterbalanced order. We asked whether adapting the page helped them sustain reading, rather than testing their English improvement."}, {"number": 10, "slug": "10-study-results", "title": "Less Decoding. More Reading.", "duration": 60, "start": 365, "end": 425, "source": "Fig. 4 on p. 9; Table 2 and §6.3 on p. 10", "kind": "Observed study results", "notes": "Participants read faster with Adapt-ER and used the tooltip less often than when reading ordinary web pages. The paired tests gave a p-value of .00418 for reading speed and .0178 for tooltip use; the arrows show the direction of those findings, not a reconstructed effect size. That suggests the adapted pages reduced the amount of interruption involved in getting through an article. In interviews, participants described a shift from decoding unfamiliar words toward following the meaning, and one participant compared ordinary reading to working through an English exam. Reported pleasure, confidence, relaxation, and motivation were also descriptively higher, although we do not make significance claims for those ratings. These results concern the experience of reading during the session, not demonstrated gains in English proficiency."}, {"number": 11, "slug": "11-what-we-did-not-prove", "title": "We Didn't Prove Better English. We Made Reading More Workable.", "duration": 30, "start": 425, "end": 455, "source": "§7.3 and §8 on p. 11", "kind": "Scope and limitations", "notes": "In summary, we observed faster reading, fewer lookups, and descriptively higher reported engagement in this small study. We did not demonstrate vocabulary acquisition or long-term learning effects in English proficiency. It is also worth noting that the evaluation involved Korean speakers reading English news on a desktop, so other languages and device settings remain open questions."}, {"number": 12, "slug": "12-why-learn-languages", "title": "If AI Can Translate Everything, Why Learn Another Language?", "duration": 40, "start": 455, "end": 495, "source": "Speaker reflection; not an empirical paper finding", "kind": "Personal reflection", "notes": "Anyway, our promising results and Adapt-ER bring me to a question beyond our study: if AI can translate everything, why learn another language? Translation is useful, and I do not want to argue against it. But learning a language can build a relationship with people, culture, and history. Sometimes I want more than an answer in a language I know; I want help getting closer to the original. Adapt-ER makes me interested in AI that supports learning, alongside AI that can speak for us."}, {"number": 13, "slug": "13-world-more-learnable", "title": "Make the World More Learnable.", "duration": 45, "start": 495, "end": 540, "source": "Speaker vision; not a tested cross-language claim", "kind": "Closing vision", "notes": "That is the future I hope this interaction points toward: making the world more learnable through the things we already want to do. Adapt-ER offers one small example, adapting English news in the reading context, with much more still to investigate. Extending this idea to other languages is a design opportunity, which is not something this study has established. The future I hope for is not one where we never have to learn another language. It's one where learning a language no longer has to be a separate or burdensome task. Thank you."}];let current=0;const sections=[...document.querySelectorAll('.slide')];
+function clock(s){return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')}
+function show(n){current=Math.max(0,Math.min(content.length-1,n));sections.forEach((s,i)=>s.classList.toggle('active',i===current));const d=content[current];document.querySelector('#timing').textContent=clock(d.start)+'–'+clock(d.end)+' · '+d.duration+' seconds';document.querySelector('#note-title').textContent=d.title;document.querySelector('#note-body').textContent=d.notes;document.querySelector('#note-source').textContent=d.source;history.replaceState(null,'','#/'+(current+1))}
+function toggle(){document.body.classList.toggle('presenter')}
+document.querySelector('#previous').onclick=()=>show(current-1);document.querySelector('#next').onclick=()=>show(current+1);document.querySelector('#presenter').onclick=toggle;
+window.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(current+1)}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(current-1)}else if(e.key==='Home')show(0);else if(e.key==='End')show(12);else if(e.key.toLowerCase()==='p'||e.key.toLowerCase()==='n')toggle();else if(e.key.toLowerCase()==='f')document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()});
+show(Number(location.hash.split('/')[1]||1)-1);
+</script></body></html>

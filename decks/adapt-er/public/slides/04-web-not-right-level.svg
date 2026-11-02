@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title-4 desc-4">
+  <title id="title-4">The Web Has Everything. Except the Right Difficulty.</title>
+  <desc id="desc-4">Paper motivation. PDF pp. 2–4, Fig. 2 on p. 5</desc>
+  <defs>
+    <marker id="arrow-ink-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#17232D" stroke-width="2" />
+    </marker>
+    <marker id="arrow-muted-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#66717A" stroke-width="2" />
+    </marker>
+    <marker id="arrow-blue-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#2771C9" stroke-width="2" />
+    </marker>
+    <marker id="arrow-coral-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#E46C59" stroke-width="2" />
+    </marker>
+    <marker id="arrow-green-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#248765" stroke-width="2" />
+    </marker>
+    <marker id="arrow-amber-4" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#D9902F" stroke-width="2" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="982" x2="1808" y2="982" stroke="#CED5DA" stroke-width="1" />
+  <text x="112" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Adapt-ER · UIST 2026</text>
+  <text x="1808" y="1025" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="end" xml:space="preserve">04 / 13</text>
+  <text x="112" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">The Web Has Everything.</text>
+  <text x="112" y="249" font-family="Arial, Helvetica, sans-serif" font-size="76" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Except the Right Difficulty.</text>
+  <rect x="112" y="330" width="1045" height="585" fill="#FFFFFF" stroke="#CED5DA" stroke-width="1.4" rx="0" />
+  <rect x="113" y="331" width="1043" height="51" fill="#F4F6F7" stroke="none" stroke-width="1.6" rx="0" />
+  <line x1="112" y1="382" x2="1157" y2="382" stroke="#CED5DA" stroke-width="1" />
+  <circle cx="136" cy="356" r="5" fill="#E46C59" stroke-width="2" />
+  <circle cx="157" cy="356" r="5" fill="#D9902F" stroke-width="2" />
+  <circle cx="178" cy="356" r="5" fill="#248765" stroke-width="2" />
+  <text x="220" y="363" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">A news article I chose</text>
+  <text x="148" y="442" font-family="Arial, Helvetica, sans-serif" font-size="39" fill="#17232D" font-weight="700" text-anchor="start" xml:space="preserve">A milestone for collaboration</text>
+  <text x="148" y="526" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Researchers </text>
+  <rect x="371.0" y="492.56" width="170.0" height="44.839999999999996" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="374.0" y="526" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">convened</text>
+  <text x="538.0" y="526" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve"> to explore</text>
+  <text x="148" y="589" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">new ideas and </text>
+  <rect x="400.0" y="555.56" width="266.0" height="44.839999999999996" fill="#FFF3DE" stroke-width="1.6" rx="3" />
+  <text x="403.0" y="589" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#D9902F" font-weight="400" text-anchor="start" xml:space="preserve">interdisciplinary</text>
+  <text x="148" y="652" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">collaboration.</text>
+  <line x1="148" y1="705" x2="1060" y2="705" stroke="#CED5DA" stroke-width="1" />
+  <line x1="148" y1="746" x2="1010" y2="746" stroke="#CED5DA" stroke-width="1" />
+  <line x1="148" y1="787" x2="1040" y2="787" stroke="#CED5DA" stroke-width="1" />
+  <rect x="696" y="624" width="407" height="206" fill="#FFFFFF" stroke="#D9902F" stroke-width="2" rx="8" />
+  <text x="722" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">interdisciplinary</text>
+  <text x="722" y="722" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">between different</text>
+  <text x="722" y="764" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">fields of study</text>
+  <text x="722" y="807" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">look up, then return</text>
+  <text x="1300" y="409" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Read</text>
+  <line x1="1330" y1="437" x2="1330" y2="494" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-4)" />
+  <text x="1300" y="544" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">Stop</text>
+  <line x1="1330" y1="572" x2="1330" y2="629" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-4)" />
+  <text x="1300" y="679" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#D9902F" font-weight="700" text-anchor="start" xml:space="preserve">Look up</text>
+  <line x1="1330" y1="707" x2="1330" y2="764" stroke="#66717A" stroke-width="2" marker-end="url(#arrow-muted-4)" />
+  <text x="1300" y="814" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#17232D" font-weight="400" text-anchor="start" xml:space="preserve">Resume</text>
+  <path d="M1575 814 H1740 V380 H1635" stroke="#66717A" stroke-width="2" fill="none" marker-end="url(#arrow-muted-4)" />
+  <text x="1300" y="925" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#66717A" font-weight="400" text-anchor="start" xml:space="preserve">Again and again.</text>
+</svg>
