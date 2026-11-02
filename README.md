@@ -64,9 +64,11 @@ Build it with `npm run build:misuse`.
 
 ## 4. UMATO
 
-Open http://localhost:3045/umato/. The deck contains 10 slides: title and authors, the VIS 2022 presentation, the expanded-work motivation, the 2022-to-2026 transition, algorithm motivation and pipeline, accuracy and runtime evidence, hyperparameter guidelines, and the GitHub link with QR code.
+Open http://localhost:3045/umato/. The deck contains 14 slides: title and authors, the VIS 2022 presentation, the expanded-work motivation, the 2022-to-2026 transition, algorithm motivation and pipeline, recorded UMAP/UMATO optimization on 3,000 Fashion-MNIST images, accuracy and local/global trade-offs, runtime evidence, hyperparameter guidelines, the GitHub link with QR code, a four-click Ph.D. reflection, and the shared closing slide with all four talks crossed out.
 
 Edit `decks/umato/slides.md`; cover styles are in `decks/umato/layouts/umato-cover.vue`. Build with `npm run build:umato`.
+
+The optimization animation uses genuine epoch snapshots recorded by `scripts/animation/record-optimization.py`. Binary traces and provenance are in `decks/umato/public/optimization/`. Playback is normalized progress, not elapsed computation time. Replay, pause, and scrubbing are available on the slide.
 
 The closing slide is shared at `shared/components/VisClosing.vue`; each deck specifies how many completed talks to cross out.
 

@@ -10,6 +10,7 @@ defineProps({ diagram: { type: Boolean, default: false } })
     <h1>Why UMATO?</h1>
     <img v-if="diagram" class="pipeline" :src="`${assetBase}figs/pipeline/umato-umap-comparison.png`" alt="Comparison of UMATO and UMAP pipelines. UMATO classifies points, optimizes global and local structure in separate phases, and arranges disconnected points." />
     <ul v-else>
+      <li>A variant of UMAP</li>
       <li>Not an “improvement” on UMAP</li>
       <li>Offers an alternative perspective on analyzing high-dimensional data</li>
       <li>Aims to preserve both global and local structure</li>

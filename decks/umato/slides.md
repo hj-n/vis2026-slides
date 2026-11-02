@@ -143,6 +143,24 @@ UMATO and UMAP pipeline comparison image supplied by the user.
 
 ---
 layout: source
+title: UMAP and UMATO optimization in action
+clicks: 0
+---
+
+<OptimizationComparison />
+
+<!--
+Real optimizer trajectories on the same 3,000 Fashion-MNIST images, input pixels scaled to [0,1], seed 42, n_neighbors=50, min_dist=0.1, PCA initialization, one thread.
+UMAP: umap-learn 0.5.7, 200 epochs. UMATO: source commit recorded in public/optimization/metadata.json, hub_num=400 (375 hubs selected for this dataset), 20 global epochs and 50 local epochs.
+UMAP and UMATO global snapshots are sampled every two epochs; UMATO local snapshots are sampled every epoch. Snapshots are taken within one uninterrupted fit per method; read-only instrumentation is checked against an uninstrumented fit, with exactly matching final arrays. No repeated fitting/restarting to synthesize intermediate epochs.
+UMATO shows only hub points during global optimization, then fades non-hub points in at their recorded initialization coordinates during a short initialization interval. Existing hubs retain their position and change radius smoothly. Final disconnected points fade in at their actual coordinates. No synthetic motion from hubs is added.
+Each panel uses one fixed square viewport across its complete trajectory. The affine scale change at the global-to-local boundary is the algorithm's own normalization; the same transformation is applied to all global frames for visual continuity.
+Playback maps the two traces independently to presentation time, not real computation time. UMATO global optimization and its initialization transition retain their timing; local optimization plays at twice its prior speed. UMAP is synchronized to finish with UMATO. Canvas interpolation smooths transitions between genuine recorded snapshots.
+Recorder: scripts/animation/record-optimization.py. Full parameters, class counts, hashes, and encoding: public/optimization/metadata.json.
+-->
+
+---
+layout: source
 title: From examples to broader evidence
 clicks: 0
 ---
@@ -154,6 +172,21 @@ Left: exact KL divergence (sigma 0.1) values from the 2022 paper, Table 1. Two o
 Right: published average global-quality metric ranks and 95% confidence intervals across 20 datasets, approximately digitized from the TVCG paper Figure 2(b). This is a rank/CI plot, not a raw observation distribution. The original MDS point has no visible interval.
 Data and provenance: data/evaluation-evidence.json.
 The extended paper was published in 2025 and is presented at IEEE VIS 2026.
+-->
+
+---
+layout: source
+title: Better global structure, with a trade-off in local accuracy
+clicks: 0
+---
+
+<GlobalLocalTradeoff />
+
+<!--
+Global and local quality rankings from the same accuracy evaluation across 20 datasets, TVCG Figure 2(b) and 2(a), respectively. Mean ranks and published 95% CIs approximately digitized from original PDF vector paths.
+Source: https://www.hyeonjeon.com/assets/pdf/jeon25tvcg2.pdf
+Data and provenance: data/evaluation-evidence.json.
+UMATO improves global preservation compared with local techniques, while sacrificing local accuracy relative to t-SNE, UMAP, and PacMAP. It is not uniformly worse than all techniques on local metrics.
 -->
 
 ---
@@ -196,4 +229,32 @@ clicks: 0
 <!--
 GitHub repository screenshot captured November 2, 2026: https://github.com/hyungkwonko/umato
 Both the clickable URL and QR code point to this repository.
+-->
+
+---
+layout: source
+title: UMATO and my Ph.D. journey
+clicks: 4
+---
+
+<PhdReflection />
+
+<!--
+Personal reflection supplied by Hyeon Jeon. Initial view reuses the exact photograph and title placement from slide 3.
+Click 1: hide the photograph and reveal the attribution to Kwon Ko.
+Click 2: reveal that the work was not included in the dissertation.
+Click 3: reveal the six rejections and its parallel development with the Ph.D. journey.
+Click 4: reveal the final round-of-applause line. Earlier reflection lines remain visible.
+-->
+
+---
+layout: source
+title: My talks at VIS 2026
+clicks: 0
+---
+
+<VisClosing />
+
+<!--
+Shared closing slide; all four presentations are marked complete.
 -->

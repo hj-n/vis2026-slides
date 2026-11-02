@@ -2,7 +2,6 @@
 import { useSlideContext } from '@slidev/client'
 import evidence from '../data/evaluation-evidence.json'
 const { $page } = useSlideContext()
-const rankX = r => 285 + (r-1)/13*505
 const color = name => name==='UMATO' ? '#23448e' : '#aab1ba'
 </script>
 
@@ -23,19 +22,7 @@ const color = name => name==='UMATO' ? '#23448e' : '#aab1ba'
       </g>
       <text x="0" y="508" class="chart-note">2 representative examples · 4 datasets evaluated</text>
     </svg>
-    <svg class="expanded-chart" viewBox="0 0 830 520" role="img" aria-label="Published global-metric average rankings across 20 datasets, with 95 percent confidence intervals, approximately digitized from Figure 2b of the extended paper. UMATO ranks near the top; MDS ranks first.">
-      <g v-for="tick in [1,4,7,10,13]" :key="tick">
-        <line :x1="rankX(tick)" :x2="rankX(tick)" y1="49" y2="460" stroke="#e6e8eb" />
-        <text :x="rankX(tick)" y="490" text-anchor="middle" class="tick-label">{{ tick }}</text>
-      </g>
-      <g v-for="(row,i) in evidence.expanded" :key="row.name" :transform="`translate(0,${62+i*32})`">
-        <rect v-if="row.name==='UMATO'" x="0" y="-17" width="822" height="32" fill="#eef2fb" />
-        <text x="256" y="8" text-anchor="end" class="rank-method" :style="{fill:row.name==='UMATO'?'#23448e':'#555',fontWeight:row.name==='UMATO'?700:400}">{{ row.name }}</text>
-        <line :x1="rankX(row.low)" :x2="rankX(row.high)" y1="0" y2="0" :stroke="color(row.name)" :stroke-width="row.name==='UMATO'?5:3" />
-        <circle :cx="rankX(row.mean)" cy="0" :r="row.name==='UMATO'?8:5" :fill="color(row.name)" />
-      </g>
-      <text x="550" y="520" text-anchor="middle" class="chart-note">Global-metric average rank (lower is better)</text>
-    </svg>
+    <EvidenceRankPlot class="expanded-chart" :rows="evidence.expanded" label="Global-quality average ranks and published 95% confidence intervals across 20 datasets." />
     <span class="page-number">{{ $page }} / <SlidesTotal /></span>
   </section>
 </template>
