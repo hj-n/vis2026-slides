@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { mkdirSync, writeFileSync, rmSync } from 'node:fs';
+import { mkdirSync, writeFileSync, rmSync, copyFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -21,7 +21,4 @@ for (const id of selected) {
 }
 mkdirSync(new URL('../dist/', import.meta.url), { recursive: true });
 writeFileSync(new URL('../dist/.nojekyll', import.meta.url), '');
-writeFileSync(new URL('../dist/index.html', import.meta.url), `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>VIS 2026 Slides</title></head>
-<body><p><a href="./visauto/">Visualization Autocomplete</a> · <a href="./dab/">Distortion-aware Brushing</a> · <a href="./misuse/">Stop Misusing t-SNE and UMAP</a> · <a href="./umato/">UMATO</a> · <a href="./adapt-er/">Adapt-ER (UIST 2026)</a></p>
-<script>location.replace('./visauto/' + location.hash)</script></body></html>\n`);
+copyFileSync(new URL('../public/index.html', import.meta.url), new URL('../dist/index.html', import.meta.url));

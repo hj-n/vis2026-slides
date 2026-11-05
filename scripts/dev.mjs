@@ -1,5 +1,6 @@
 import http from 'node:http';
 import net from 'node:net';
+import { readFileSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
@@ -21,8 +22,12 @@ const requestDeck = req => route(req.url) || ((req.url.startsWith('/@server-reac
 const server = http.createServer((req, res) => {
   const path = req.url.split('?')[0];
   const canonical = decks.find(deck => path === deck.base.slice(0, -1));
-  if (path === '/' || canonical) {
-    res.writeHead(302, { Location: canonical ? req.url.replace(path, canonical.base) : '/visauto/' });
+  if (path === '/' || path === '/index.html') {
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(readFileSync(new URL('../public/index.html', import.meta.url))); return;
+  }
+  if (canonical) {
+    res.writeHead(302, { Location: req.url.replace(path, canonical.base) });
     res.end(); return;
   }
   const deck = requestDeck(req);

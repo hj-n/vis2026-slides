@@ -1,5 +1,7 @@
 # VIS 2026 Presentations
 
+Presentation hub: https://hyeonword.com/vis2026-slides/ (four VIS decks). Locally, open http://localhost:3045/. Edit `public/index.html` to update the hub.
+
 ## 1. Visualization Autocomplete
 
 ```sh
